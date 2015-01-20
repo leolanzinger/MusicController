@@ -1,0 +1,3 @@
+[submodule "Redland-ObjC"]
+	path = Redland-ObjC
+	url = git://github.com/p2/Redland-ObjC.git
