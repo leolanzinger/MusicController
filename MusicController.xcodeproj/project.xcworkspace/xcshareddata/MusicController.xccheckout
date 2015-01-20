@@ -12,6 +12,8 @@
 	<dict>
 		<key>8F088CB3846B59FFB1A5AABE5C45101615AA0136</key>
 		<string>https://github.com/leolanzinger/MusicController.git</string>
+		<key>CD7E64D0D336E6CA074E7ABF2FDE6C3B733D34F3</key>
+		<string>git://github.com/p2/Redland-ObjC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MusicController.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>8F088CB3846B59FFB1A5AABE5C45101615AA0136</key>
 		<string>../..</string>
+		<key>CD7E64D0D336E6CA074E7ABF2FDE6C3B733D34F3</key>
+		<string>../..Redland-ObjC</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/leolanzinger/MusicController.git</string>
@@ -35,6 +39,14 @@
 			<string>8F088CB3846B59FFB1A5AABE5C45101615AA0136</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MusicController</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD7E64D0D336E6CA074E7ABF2FDE6C3B733D34F3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MusicControllerRedland-ObjC</string>
 		</dict>
 	</array>
 </dict>

@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var rdfParser: RdfParser = RdfParser()
+        rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/example.xml")
     }
 
     override func didReceiveMemoryWarning() {

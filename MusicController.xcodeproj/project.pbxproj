@@ -13,6 +13,12 @@
 		B30489381A6E624300D9189C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30489371A6E624300D9189C /* Images.xcassets */; };
 		B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30489391A6E624300D9189C /* LaunchScreen.xib */; };
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
+		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
+		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
+		B3EAF0A41A6E6812001C6666 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
+		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
+		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
+		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +28,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = B304892A1A6E624300D9189C;
 			remoteInfo = MusicController;
+		};
+		B3EAF09C1A6E67D2001C6666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Redland;
+		};
+		B3EAF09E1A6E67D2001C6666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED48EB5008BB557A00ACF14F;
+			remoteInfo = Tests;
+		};
+		B3EAF0A01A6E67D2001C6666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE7B44E15C84978004D5A68;
+			remoteInfo = "redland-ios";
+		};
+		B3EAF0A21A6E67D2001C6666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE7B45E15C84978004D5A68;
+			remoteInfo = "Tests-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +70,14 @@
 		B30489401A6E624300D9189C /* MusicControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30489451A6E624300D9189C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30489461A6E624300D9189C /* MusicControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControllerTests.swift; sourceTree = "<group>"; };
+		B38BA7CE1A6E70EB00D408EA /* example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.xml; sourceTree = "<group>"; };
+		B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicController-Bridging-Header.h"; sourceTree = "<group>"; };
+		B38BA7D31A6E727600D408EA /* RdfParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdfParser.h; sourceTree = "<group>"; };
+		B38BA7D41A6E727600D408EA /* RdfParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdfParser.m; sourceTree = "<group>"; };
+		B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redland.xcodeproj; path = "Redland-ObjC/Redland.xcodeproj"; sourceTree = "<group>"; };
+		B3EAF0A51A6E6830001C6666 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B3EAF0A71A6E6841001C6666 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = usr/lib/libxslt.dylib; sourceTree = SDKROOT; };
+		B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */,
+				B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */,
+				B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */,
+				B3EAF0A41A6E6812001C6666 /* libredland-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +105,13 @@
 		B30489221A6E624300D9189C = {
 			isa = PBXGroup;
 			children = (
+				B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */,
+				B3EAF0A71A6E6841001C6666 /* libxslt.dylib */,
+				B3EAF0A51A6E6830001C6666 /* libxml2.dylib */,
 				B304892D1A6E624300D9189C /* MusicController */,
 				B30489431A6E624300D9189C /* MusicControllerTests */,
 				B304892C1A6E624300D9189C /* Products */,
+				B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +129,13 @@
 			children = (
 				B30489301A6E624300D9189C /* AppDelegate.swift */,
 				B30489321A6E624300D9189C /* ViewController.swift */,
+				B38BA7D31A6E727600D408EA /* RdfParser.h */,
+				B38BA7D41A6E727600D408EA /* RdfParser.m */,
 				B30489341A6E624300D9189C /* Main.storyboard */,
 				B30489371A6E624300D9189C /* Images.xcassets */,
 				B30489391A6E624300D9189C /* LaunchScreen.xib */,
 				B304892E1A6E624300D9189C /* Supporting Files */,
+				B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */,
 			);
 			path = MusicController;
 			sourceTree = "<group>";
@@ -91,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B304892F1A6E624300D9189C /* Info.plist */,
+				B38BA7CE1A6E70EB00D408EA /* example.xml */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +164,17 @@
 				B30489451A6E624300D9189C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3EAF0921A6E67D2001C6666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3EAF09D1A6E67D2001C6666 /* Redland.framework */,
+				B3EAF09F1A6E67D2001C6666 /* Tests.octest */,
+				B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */,
+				B3EAF0A31A6E67D2001C6666 /* Tests-iOS.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +244,12 @@
 			mainGroup = B30489221A6E624300D9189C;
 			productRefGroup = B304892C1A6E624300D9189C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3EAF0921A6E67D2001C6666 /* Products */;
+					ProjectRef = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B304892A1A6E624300D9189C /* MusicController */,
@@ -187,6 +258,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B3EAF09D1A6E67D2001C6666 /* Redland.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Redland.framework;
+			remoteRef = B3EAF09C1A6E67D2001C6666 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3EAF09F1A6E67D2001C6666 /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = B3EAF09E1A6E67D2001C6666 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libredland-ios.a";
+			remoteRef = B3EAF0A01A6E67D2001C6666 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3EAF0A31A6E67D2001C6666 /* Tests-iOS.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Tests-iOS.octest";
+			remoteRef = B3EAF0A21A6E67D2001C6666 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		B30489291A6E624300D9189C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -194,6 +296,7 @@
 			files = (
 				B30489361A6E624300D9189C /* Main.storyboard in Resources */,
 				B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */,
+				B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */,
 				B30489381A6E624300D9189C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +317,7 @@
 			files = (
 				B30489331A6E624300D9189C /* ViewController.swift in Sources */,
 				B30489311A6E624300D9189C /* AppDelegate.swift in Sources */,
+				B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +440,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
 				INFOPLIST_FILE = MusicController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicController/MusicController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -346,9 +459,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
 				INFOPLIST_FILE = MusicController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicController/MusicController-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Release;
 		};
@@ -405,6 +526,7 @@
 				B304894C1A6E624300D9189C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B304894D1A6E624300D9189C /* Build configuration list for PBXNativeTarget "MusicControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +535,7 @@
 				B304894F1A6E624300D9189C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
