@@ -1,0 +1,159 @@
+digraph graphname {
+ 
+ OM [label="Output Modality", style=filled,fillcolor=yellow] 
+ IM [label="Input Modality", style=filled,fillcolor=yellow];
+ IM [shape=box];
+ OM [shape=box];
+
+ OM -> Vibration;
+ OM -> Audio;
+ OM -> Visual;
+ IM -> Wii_Gesture;
+ IM -> Air_Gesture;
+ 
+ Wii_Gesture [label="Wii Gesture"];
+ Air_Gesture [label="Air Gesture"];
+ 
+ SMF1 [label="Stop Music Feedbak 1"];
+ PMF1 [label="Play Music Feedbak 1"];
+ NTF1 [label="Next Track Feedbak 1"];
+ PTF1 [label="Previous Track Feedbak 1"];
+ VDF1 [label="Volume Down Feedbak 1"];
+ VUF1 [label="Volume Up Feedbak 1"];
+ 
+ SMF2 [label="Stop Music Feedbak 2"];
+ PMF2 [label="Play Music Feedbak 2"];
+ NTF2 [label="Next Track Feedbak 2"];
+ PTF2 [label="Previous Track Feedbak 2"];
+ VDF2 [label="Volume Down Feedbak 2"];
+ VUF2 [label="Volume Up Feedbak 2"];
+ 
+ SMF [label="Stop Music Feedbak"];
+ PMF [label="Play Music Feedbak"];
+ NTF [label="Next Track Feedbak"];
+ PTF [label="Previous Track Feedbak"];
+ VDF [label="Volume Down Feedbak"];
+ VUF [label="Volume Up Feedbak"];
+ 
+ SMF1 -> SMF [label="type of"];
+ SMF2 -> SMF [label="type of"];
+ PMF1 -> PMF [label="type of"];
+ PMF2 -> PMF [label="type of"];
+ NTF1 -> NTF [label="type of"];
+ NTF2 -> NTF [label="type of"];
+ PTF1 -> PTF [label="type of"];
+ PTF2 -> PTF [label="type of"];
+ VDF1 -> VDF [label="type of"];
+ VDF2 -> VDF [label="type of"];
+ VUP1 -> VUP [label="type of"];
+ VUP2 -> VUP [label="type of"];
+ 
+ StopMA -> SMF [label="Triggers"];
+ PlayMA -> PMF [label="Triggers"]; 
+ NextSA -> NTF [label="Triggers"];
+ PreviousSA -> PTF [label="Triggers"];
+ VolumeUA -> VUF [label="Triggers"];
+ VolumeDA -> VDF [label="Triggers"];
+
+ SMF1 -> Vibration;
+ PMF1 -> Vibration;
+ NTF1 -> Vibration;
+ PTF1 -> Vibration;
+ VDF1 -> Vibration;
+ VUF1 -> Vibration;
+ 
+ SMF2 [label="Stop Music Feedbak 2"];
+ SMF2 -> Visual;
+
+ SMF1 -> True [label="Requires holding"];
+ PMF1 -> True [label="Requires holding"];
+ NTF1 -> True [label="Requires holding"];
+ PTF1 -> True [label="Requires holding"];
+ VDF1 -> True [label="Requires holding"];
+ VUF1 -> True [label="Requires holding"];
+
+
+ SMF2 -> None [label="Requires handicap"];
+
+ Act [label="Action"];
+ Act [shape=box];
+ Act -> StopMA [label="Type of"];
+ Act -> PlayMA [label="Type of"];
+ Act -> NextSA [label="Type of"];
+ Act -> PreviousSA [label="Type of"];
+ Act -> VolumeUA [label="Type of"];
+ Act -> VolumeDA [label="Type of"];
+
+ StopMA [label="Stop Music Action"];
+ PlayMA [label="Play Music Action"];
+ NextSA [label="Next Song Action"];
+ PreviousSA [label="Previous Song Action"];
+ VolumeUA [label="Volume Up Action"];
+ VolumeDA [label="Volume Down Action"];
+
+ SMAG [label="Stop Music Air Gesture"];
+ PMAG [label="Play Music Air Gesture"];
+ NSAG [label="Next Song Air Gesture"];
+ PSAG [label="Previous Song Air Gesture"];
+ VUAG [label="Volume Up Air Gesture"];
+ VDAG [label="Volume Down Air Gesture"];
+ 
+ SMWG [label="Stop Music Wii Gesture"];
+ PMWG [label="Play Music Wii Gesture"];
+ NSWG [label="Next Song Wii Gesture"];
+ PSWG [label="Previous Song Wii Gesture"];
+ VUWG [label="Volume Up Wii Gesture"];
+ VDWG [label="Volume Down Wii Gesture"];
+
+ SMAG -> Air_Gesture [label="Type of"];
+ PMAG -> Air_Gesture [label="Type of"];
+ NSAG -> Air_Gesture [label="Type of"];
+ PSAG -> Air_Gesture [label="Type of"];
+ VUAG -> Air_Gesture [label="Type of"];
+ VDAG -> Air_Gesture [label="Type of"];
+
+ SMAG -> StopMA [label="Type of"];
+ PMAG -> PlayMA [label="Type of"];
+ NSAG -> NextSA [label="Type of"];
+ PSAG -> PreviousSA [label="Type of"];
+ VUAG -> VolumeUA [label="Type of"];
+ VDAG -> VolumeDA [label="Type of"];
+ 
+ SMWG -> Wii_Gesture [label="Type of"];
+ PMWG -> Wii_Gesture [label="Type of"];
+ NSWG -> Wii_Gesture [label="Type of"];
+ PSWG -> Wii_Gesture [label="Type of"];
+ VUWG -> Wii_Gesture [label="Type of"];
+ VDWG -> Wii_Gesture [label="Type of"];
+
+ SMWG -> StopMA [label="Type of"];
+ PMWG -> PlayMA [label="Type of"];
+ NSWG -> NextSA [label="Type of"];
+ PSWG -> PreviousSA [label="Type of"];
+ VUWG -> VolumeUA [label="Type of"];
+ VDWG -> VolumeDA [label="Type of"];
+
+ 
+ Context -> SMAG [style=dotted]; 
+ Context -> PMAG [style=dotted];
+ Context -> NSAG [style=dotted]; 
+ Context -> PSAG [style=dotted]; 
+ Context -> VUAG [style=dotted]; 
+ Context -> VDAG [style=dotted]; 
+
+ Context -> SMWG [style=dotted]; 
+ Context -> PMWG [style=dotted];
+ Context -> NSWG [style=dotted]; 
+ Context -> PSWG [style=dotted]; 
+ Context -> VUWG [style=dotted]; 
+ Context -> VDWG [style=dotted];
+
+
+
+
+ a -> b -> c [color=blue];
+ b -> d [style=dotted];
+ 
+ 
+ 
+ }
