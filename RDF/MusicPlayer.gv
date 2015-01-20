@@ -1,0 +1,39 @@
+digraph graphname {
+    
+    OM [label="Output Modality"];
+    IM [label="Input Modality"];
+    IM [shape=box];
+    OM [shape=box];
+
+    OM -> Vibration;
+    OM -> Audio;
+    OM -> Visual;
+	IM -> Wii_Gesture;
+ 	IM -> Air_Gesture;
+    
+    Wii_Gesture [label="Wii Gesture"];
+    Air_Gesture [label="Air Gesture"];
+
+    SMF1 [label="Stop Music Feedback 1"];
+    SMF1 -> True [label=" Requires feedback"];
+
+    Act [label="Action"];
+    Act [shape=box];
+    Act -> StopMA [label="Type of"];
+    Act -> PlayMA [label="Type of"];
+    Act -> NextSA [label="Type of"];
+    Act -> PreviousSA [label="Type of"];
+    Act -> VolumeUA [label="Type of"];
+    Act -> VolumeDA [label="Type of"];
+
+    StopMA [label="Stop Music Action"];
+    PlayMA [label="Play Music Action"];
+    NextSA [label="Next Song Action"];
+    PreviousSA [label="Previous Song Action"];
+    VolumeUA [label="Volume Up Action"];
+    VolumeDA [label="Volume Down Action"];
+
+    SMAG [label="Stop Music Air Gesture"];
+    SMAG -> Air_Gesture [label="Type of"];
+    Context -> SMG;
+ }
