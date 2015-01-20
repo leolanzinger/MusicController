@@ -11,6 +11,7 @@
 @implementation RdfParser
 - (void)parseRDFXML:(NSString *)rdfString {
     if ([rdfString length] > 0) {
+        
         NSString *rdfPath = [[NSBundle mainBundle] pathForResource:@"example" ofType:@"xml"];
         NSString *rdfString = [[NSString alloc] initWithContentsOfFile:rdfPath
                                                               encoding:NSUTF8StringEncoding
@@ -39,6 +40,7 @@
         // object is the object-node of the RedlandStatement that is returned by the query.
         NSString *creator = [rslt.object literalValue];
         NSLog(@"Creator: %@", creator);
+        
     }
 }
 @end
