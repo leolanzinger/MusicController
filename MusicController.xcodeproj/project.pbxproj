@@ -14,9 +14,9 @@
 		B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30489391A6E624300D9189C /* LaunchScreen.xib */; };
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
 		B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */ = {isa = PBXBuildFile; fileRef = B336115C1A6EA58000422D85 /* MusicPlayer.xml */; };
+		B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
 		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
 		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
-		B3EAF0A41A6E6812001C6666 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
 		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
@@ -3659,6 +3659,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				C5E705801A77A2A200575BE3 /* triple.o in Frameworks */,
 				C5E706631A77A2A200575BE3 /* raptor_term.o in Frameworks */,
 				C5E706891A77A2A200575BE3 /* turtle_parser.o in Frameworks */,
@@ -3673,11 +3674,15 @@
 				C5E7065A1A77A2A200575BE3 /* raptor_statement.o in Frameworks */,
 				C5E705691A77A2A200575BE3 /* language.o in Frameworks */,
 				C5E706121A77A2A200575BE3 /* raptor_log.o in Frameworks */,
+=======
+				B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */,
+>>>>>>> 24619c810ad7e4c480a51027e4b9dbff32304fce
 				B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */,
 				C5E705731A77A2A200575BE3 /* namespace.o in Frameworks */,
 				C5E706061A77A2A200575BE3 /* raptor_json_writer.o in Frameworks */,
 				B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */,
 				B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */,
+<<<<<<< HEAD
 				C5E705601A77A2A200575BE3 /* context.o in Frameworks */,
 				C5E706541A77A2A200575BE3 /* raptor_serialize_turtle.o in Frameworks */,
 				C5E7063C1A77A2A200575BE3 /* raptor_serialize.o in Frameworks */,
@@ -3725,6 +3730,8 @@
 				C5E705F01A77A2A200575BE3 /* raptor_avltree.o in Frameworks */,
 				C5E7060C1A77A2A200575BE3 /* raptor_libxml.o in Frameworks */,
 				C5E7064E1A77A2A200575BE3 /* raptor_serialize_rdfxmla.o in Frameworks */,
+=======
+>>>>>>> 24619c810ad7e4c480a51027e4b9dbff32304fce
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
