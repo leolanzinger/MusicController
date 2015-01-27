@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 //        var previewUrl = "http://a1397.phobos.apple.com/us/r1000/118/Music/v4/d3/1c/a1/d31ca1b2-ad41-0011-a85e-f7c34b8897be/mzaf_1643522190305126374.aac.m4a"
 
         let soundFilePath:NSString = NSBundle.mainBundle().pathForResource("sound", ofType: "caf")!
-        let soundUrl:NSURL = NSURL.isEqual(<#object: AnyObject?#>)
+        let soundUrl:NSURL = NSURL
         NSLog("music path", soundUrl)
         
         audioPlayer.alloc().initWithContentsOfURL(soundUrl, error: nil)
