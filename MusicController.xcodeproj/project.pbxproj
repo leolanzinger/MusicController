@@ -13,6 +13,7 @@
 		B30489381A6E624300D9189C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30489371A6E624300D9189C /* Images.xcassets */; };
 		B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30489391A6E624300D9189C /* LaunchScreen.xib */; };
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
+		B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */ = {isa = PBXBuildFile; fileRef = B336115C1A6EA58000422D85 /* MusicPlayer.xml */; };
 		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
 		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
 		B3EAF0A41A6E6812001C6666 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
@@ -70,6 +71,7 @@
 		B30489401A6E624300D9189C /* MusicControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30489451A6E624300D9189C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30489461A6E624300D9189C /* MusicControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControllerTests.swift; sourceTree = "<group>"; };
+		B336115C1A6EA58000422D85 /* MusicPlayer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MusicPlayer.xml; path = RDF/MusicPlayer.xml; sourceTree = SOURCE_ROOT; };
 		B38BA7CE1A6E70EB00D408EA /* example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.xml; sourceTree = "<group>"; };
 		B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicController-Bridging-Header.h"; sourceTree = "<group>"; };
 		B38BA7D31A6E727600D408EA /* RdfParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdfParser.h; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B304892F1A6E624300D9189C /* Info.plist */,
+				B336115C1A6EA58000422D85 /* MusicPlayer.xml */,
 				B38BA7CE1A6E70EB00D408EA /* example.xml */,
 			);
 			name = "Supporting Files";
@@ -298,6 +301,7 @@
 				B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */,
 				B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */,
 				B30489381A6E624300D9189C /* Images.xcassets in Resources */,
+				B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

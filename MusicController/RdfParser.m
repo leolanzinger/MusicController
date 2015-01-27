@@ -28,6 +28,10 @@
             NSLog(@"Failed to parse RDF: %@", [exception reason]);
         }
         
+        /*
+         *  Actual RDF parsing work (needs to be fixed)
+        */
+        
         RedlandNode *subject = [RedlandNode nodeWithURIString:@"http://www.w3.org/2001/08/rdf-test/"];
         RedlandNode *predicate = [RedlandNode nodeWithURIString:@"http://purl.org/dc/elements/1.1/creator"];
         RedlandStatement *statement = [RedlandStatement statementWithSubject:subject
