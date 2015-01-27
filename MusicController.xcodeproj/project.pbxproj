@@ -14,9 +14,9 @@
 		B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30489391A6E624300D9189C /* LaunchScreen.xib */; };
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
 		B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */ = {isa = PBXBuildFile; fileRef = B336115C1A6EA58000422D85 /* MusicPlayer.xml */; };
+		B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
 		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
 		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
-		B3EAF0A41A6E6812001C6666 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
 		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
@@ -87,10 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */,
 				B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */,
 				B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */,
 				B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */,
-				B3EAF0A41A6E6812001C6666 /* libredland-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
