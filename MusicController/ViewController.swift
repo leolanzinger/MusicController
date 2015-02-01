@@ -15,13 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var songLabel: UILabel!
     
     var mediaPlayer: MPMoviePlayerController = MPMoviePlayerController()
-    var playing = false
     
     let audioPlayer: Sound = Sound()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         audioPlayer.readFileIntoAVPlayer()
+        audioPlayer.stopAVPLayer()
 
         var rdfParser: RdfParser = RdfParser()
         // Do not parse rdf for now
@@ -34,13 +34,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playStopMusic(sender: AnyObject) {
+        var playing:Bool = audioPlayer.toggleAVPlayer()
         if (playing) {
-            playing = false
-            playButton.setTitle("Play", forState: UIControlState.Normal)
+            playButton.setTitle("Pause", forState: UIControlState.Normal)
         }
         else {
-            playing = true
-            playButton.setTitle("Pause", forState: UIControlState.Normal)
+            playButton.setTitle("Play", forState: UIControlState.Normal)
         }
     }
 

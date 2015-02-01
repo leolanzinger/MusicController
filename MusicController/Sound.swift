@@ -44,11 +44,13 @@ class Sound : NSObject {
         }
     }
     
-    func toggleAVPlayer() {
+    func toggleAVPlayer() -> Bool {
         if avPlayer.playing {
             avPlayer.pause()
+            return false
         } else {
             avPlayer.play()
+            return true
         }
     }
 }
