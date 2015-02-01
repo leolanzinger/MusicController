@@ -23,7 +23,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         audioPlayer.readFileIntoAVPlayer()
+<<<<<<< HEAD
+        
+=======
+        audioPlayer.stopAVPLayer()
 
+>>>>>>> 9bd7d7b9a18bd7fd0990605d46cb579e092b59fb
         var rdfParser: RdfParser = RdfParser()
         // Do not parse rdf for now
         //rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/MusicPlayer.xml")
