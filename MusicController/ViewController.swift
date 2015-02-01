@@ -17,12 +17,14 @@ class ViewController: UIViewController {
     var mediaPlayer: MPMoviePlayerController = MPMoviePlayerController()
     var playing = false
     
+    var gestureRecognizer: GestureRecognizer = GestureRecognizer()
+    
     let audioPlayer: Sound = Sound()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         audioPlayer.readFileIntoAVPlayer()
-
+        
         var rdfParser: RdfParser = RdfParser()
         // Do not parse rdf for now
         //rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/MusicPlayer.xml")

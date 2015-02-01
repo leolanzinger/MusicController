@@ -30,6 +30,8 @@
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
 		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
+		C56DA1C91A7E8EE100B8D36D /* GestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */; };
+		C56DA1CB1A7E919500B8D36D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,9 @@
 		B3EAF0A51A6E6830001C6666 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B3EAF0A71A6E6841001C6666 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = usr/lib/libxslt.dylib; sourceTree = SDKROOT; };
 		B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizer.h; sourceTree = "<group>"; };
+		C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizer.m; sourceTree = "<group>"; };
+		C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56DA1CB1A7E919500B8D36D /* CoreMotion.framework in Frameworks */,
 				B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */,
 				B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */,
 				B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */,
@@ -127,6 +133,7 @@
 		B30489221A6E624300D9189C = {
 			isa = PBXGroup;
 			children = (
+				C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */,
 				B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */,
 				B3EAF0A71A6E6841001C6666 /* libxslt.dylib */,
 				B3EAF0A51A6E6830001C6666 /* libxml2.dylib */,
@@ -153,6 +160,8 @@
 				B30489321A6E624300D9189C /* ViewController.swift */,
 				B3BB9B6C1A79170C00A6DD56 /* Sound.swift */,
 				B38BA7D31A6E727600D408EA /* RdfParser.h */,
+				C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */,
+				C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */,
 				B38BA7D41A6E727600D408EA /* RdfParser.m */,
 				B30489341A6E624300D9189C /* Main.storyboard */,
 				B30489371A6E624300D9189C /* Images.xcassets */,
@@ -371,6 +380,7 @@
 				B30489311A6E624300D9189C /* AppDelegate.swift in Sources */,
 				B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */,
 				B3BB9B6D1A79170C00A6DD56 /* Sound.swift in Sources */,
+				C56DA1C91A7E8EE100B8D36D /* GestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
