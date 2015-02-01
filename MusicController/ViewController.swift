@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var songLabel: UILabel!
     
     var mediaPlayer: MPMoviePlayerController = MPMoviePlayerController()
-    var playing = false
     
     var gestureRecognizer: GestureRecognizer = GestureRecognizer()
     
@@ -24,7 +23,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         audioPlayer.readFileIntoAVPlayer()
+<<<<<<< HEAD
         
+=======
+        audioPlayer.stopAVPLayer()
+
+>>>>>>> 9bd7d7b9a18bd7fd0990605d46cb579e092b59fb
         var rdfParser: RdfParser = RdfParser()
         // Do not parse rdf for now
         //rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/MusicPlayer.xml")
@@ -36,13 +40,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playStopMusic(sender: AnyObject) {
+        var playing:Bool = audioPlayer.toggleAVPlayer()
         if (playing) {
-            playing = false
-            playButton.setTitle("Play", forState: UIControlState.Normal)
+            playButton.setTitle("Pause", forState: UIControlState.Normal)
         }
         else {
-            playing = true
-            playButton.setTitle("Pause", forState: UIControlState.Normal)
+            playButton.setTitle("Play", forState: UIControlState.Normal)
         }
     }
 
