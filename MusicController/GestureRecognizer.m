@@ -52,18 +52,28 @@ static const NSTimeInterval updateTime = 0.1;//using large interval (to not stre
         NSLog(@"Detected shake once to right");
         detectedShake = @"OneRight";
     }
-    //z asses: up down
+    //y asses: up down
     //shake once up
-    if (accelerometerData.acceleration.z > 3.0) {
+    if (accelerometerData.acceleration.y > 3.0) {
         NSLog(@"Detected shake once up");
-        detectedShake = @"OneLeft";
+        detectedShake = @"OneUp";
     }
     //shake once down
-    if (accelerometerData.acceleration.z < -3.0) {
+    if (accelerometerData.acceleration.y < -3.0) {
         NSLog(@"Detected shake once down");
-        detectedShake = @"OneRight";
+        detectedShake = @"OneDown";
     }
-    
+    //z asses: top bottom
+    //shake once top
+    if (accelerometerData.acceleration.z > 3.0) {
+        NSLog(@"Detected shake once top");
+        detectedShake = @"OneTop";
+    }
+    //shake once bottom
+    if (accelerometerData.acceleration.z < -3.0) {
+        NSLog(@"Detected shake once bottom");
+        detectedShake = @"OneBottom";
+    }
     return detectedShake;
 }
 
