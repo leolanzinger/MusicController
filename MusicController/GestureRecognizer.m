@@ -52,8 +52,8 @@ bool time_setted;
     //NSLog(@"\n\tx:%2.1f, y:%2.1f, z:%2.1f", accelerometerData.acceleration.x, accelerometerData.acceleration.y, accelerometerData.acceleration.z);
     NSString *detectedShake = @"";
     
-    float threshold_for_holding = 0.15;
-    float threshold_for_gesture = 0.35;
+    float threshold_for_holding = 0.25;
+    float threshold_for_gesture = 0.30;
     float time_gesture = 0.8;
     //for this gestures the accelerometer should be x:0 y:0 z:-1
     if (!gesture_started) {
