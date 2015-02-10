@@ -75,6 +75,8 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: NEXT");
+                detectedShake = @"Next";
+                return detectedShake;
             }
         }else if (fabs(accelerometerData.acceleration.x + 1) < threshold_for_gesture){
             time_end = CFAbsoluteTimeGetCurrent();
@@ -82,6 +84,8 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: PREW");
+                detectedShake = @"Previous";
+                return detectedShake;
             }
         }
         
@@ -92,6 +96,8 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume DOWN");
+                detectedShake = @"Down";
+                return detectedShake;
             }
         }else if (fabs(accelerometerData.acceleration.y + 1) < threshold_for_gesture){
             time_end = CFAbsoluteTimeGetCurrent();
@@ -99,6 +105,8 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume UP");
+                detectedShake = @"Up";
+                return detectedShake;
             }
         }
     }

@@ -30,11 +30,11 @@ class SoundPlayer : NSObject {
             }
         }
         
-//        println("playing \(fileURL)")
-//        avPlayer.delegate = self
-//        avPlayer.prepareToPlay()
-//        avPlayer.volume = 1.0
-//        avPlayer.play()
+        println("playing \(fileURL)")
+        avPlayer.delegate = self
+        avPlayer.prepareToPlay()
+        avPlayer.volume = 1.0
+        avPlayer.play()
     }
     
     func stopAVPLayer() {
