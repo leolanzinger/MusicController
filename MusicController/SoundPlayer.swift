@@ -21,7 +21,7 @@ class SoundPlayer : NSObject {
     func readFileIntoAVPlayer() {
         
         var error: NSError?
-        let fileURL:NSURL = NSBundle.mainBundle().URLForResource("time", withExtension: "mp3")!
+        let fileURL:NSURL = NSBundle.mainBundle().URLForResource("1-eclipse", withExtension: "mp3")!
         
         self.avPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: &error)
         if avPlayer == nil {
@@ -30,11 +30,11 @@ class SoundPlayer : NSObject {
             }
         }
         
-        println("playing \(fileURL)")
-        avPlayer.delegate = self
-        avPlayer.prepareToPlay()
-        avPlayer.volume = 1.0
-        avPlayer.play()
+//        println("playing \(fileURL)")
+//        avPlayer.delegate = self
+//        avPlayer.prepareToPlay()
+//        avPlayer.volume = 1.0
+//        avPlayer.play()
     }
     
     func stopAVPLayer() {

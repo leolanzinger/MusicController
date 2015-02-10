@@ -15,7 +15,9 @@
 //30–60     Suitable for games and other apps that use the accelerometer for real-time user input.
 //70–100    Suitable for apps that need to detect high-frequency motion. For example, you might use this interval to detect the user hitting the device or shaking it very quickly.
 
-static const NSTimeInterval updateTime = 0.1;//using large interval (to not stress the CPU)
+static const NSTimeInterval updateTime = 0.05;//using large interval (to not stress the CPU)
+bool gesture_started;
+bool time_setted;
 
 -(instancetype)init
 {
@@ -29,51 +31,78 @@ static const NSTimeInterval updateTime = 0.1;//using large interval (to not stre
         //this method call the methot accelerometerREcognizer
         [motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error){
             [self accelerometerRecognizer:accelerometerData];
-            
         }];
+        //init the previous values
+        previous_x_value = 0;
+        previous_y_value = 0;
+        previous_z_value = -1;
+        gesture_started = false;
+        time_setted = false;
     }
     return self;
 }
 
 //This method parse the data and return one string accordingly to the movement
+
+//simple notes about how to do it: we have to detect whend does the phone stops quickly.
+//to do that we need the last value of the axes and then check the current value
+//the values go from -1 to 1 when the phone is not moving fast
+//we can try to have a treshold about 1 bethween the actual value and the previous one
 - (NSString *)accelerometerRecognizer:(CMAccelerometerData *)accelerometerData {
-    //NSLog(@"\n\tx:%f, y:%f, z:%f", accelerometerData.acceleration.x, accelerometerData.acceleration.y, accelerometerData.acceleration.z);
+    //NSLog(@"\n\tx:%2.1f, y:%2.1f, z:%2.1f", accelerometerData.acceleration.x, accelerometerData.acceleration.y, accelerometerData.acceleration.z);
     NSString *detectedShake = @"";
-    //this numbers are temporally numbers just to test
-    //Whatch out the one shake is of course imperfect
-    //x asses: left right
-    //shake once to left
-    if (accelerometerData.acceleration.x > 3.0) {
-        NSLog(@"Detected shake once to left");
-        detectedShake = @"OneLeft";
+    
+    float threshold_for_holding = 0.15;
+    float threshold_for_gesture = 0.35;
+    float time_gesture = 0.8;
+    //for this gestures the accelerometer should be x:0 y:0 z:-1
+    if (!gesture_started) {
+        if ((fabsf(accelerometerData.acceleration.x) < threshold_for_holding) && (fabsf(accelerometerData.acceleration.y) < threshold_for_holding)) {
+            gesture_started = true;
+            NSLog(@"ready");
+        }
+    }else{
+        if (!time_setted && fabsf(accelerometerData.acceleration.x) > threshold_for_holding) {
+            previous_x_value = accelerometerData.acceleration.x;
+            time_begin = CFAbsoluteTimeGetCurrent();
+            time_setted = true;
+        }
+        
+        //previous and next song
+        if (fabs(accelerometerData.acceleration.x - 1) < threshold_for_gesture) {
+            time_end = CFAbsoluteTimeGetCurrent();
+            gesture_started = false;
+            time_setted = false;
+            if (time_end - time_begin < time_gesture) {
+                NSLog(@"Gesture detected: NEXT");
+            }
+        }else if (fabs(accelerometerData.acceleration.x + 1) < threshold_for_gesture){
+            time_end = CFAbsoluteTimeGetCurrent();
+            gesture_started = false;
+            time_setted = false;
+            if (time_end - time_begin < time_gesture) {
+                NSLog(@"Gesture detected: PREW");
+            }
+        }
+        
+        //volume up and down
+        if (fabs(accelerometerData.acceleration.y - 1) < threshold_for_gesture) {
+            time_end = CFAbsoluteTimeGetCurrent();
+            gesture_started = false;
+            time_setted = false;
+            if (time_end - time_begin < time_gesture) {
+                NSLog(@"Gesture detected: Volume DOWN");
+            }
+        }else if (fabs(accelerometerData.acceleration.y + 1) < threshold_for_gesture){
+            time_end = CFAbsoluteTimeGetCurrent();
+            gesture_started = false;
+            time_setted = false;
+            if (time_end - time_begin < time_gesture) {
+                NSLog(@"Gesture detected: Volume UP");
+            }
+        }
     }
-    //shake once to left
-    if (accelerometerData.acceleration.x < -3.0) {
-        NSLog(@"Detected shake once to right");
-        detectedShake = @"OneRight";
-    }
-    //y asses: up down
-    //shake once up
-    if (accelerometerData.acceleration.y > 3.0) {
-        NSLog(@"Detected shake once up");
-        detectedShake = @"OneUp";
-    }
-    //shake once down
-    if (accelerometerData.acceleration.y < -3.0) {
-        NSLog(@"Detected shake once down");
-        detectedShake = @"OneDown";
-    }
-    //z asses: top bottom
-    //shake once top
-    if (accelerometerData.acceleration.z > 3.0) {
-        NSLog(@"Detected shake once top");
-        detectedShake = @"OneTop";
-    }
-    //shake once bottom
-    if (accelerometerData.acceleration.z < -3.0) {
-        NSLog(@"Detected shake once bottom");
-        detectedShake = @"OneBottom";
-    }
+
     return detectedShake;
 }
 

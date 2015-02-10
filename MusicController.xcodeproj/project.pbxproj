@@ -15,21 +15,15 @@
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
 		B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */ = {isa = PBXBuildFile; fileRef = B336115C1A6EA58000422D85 /* MusicPlayer.xml */; };
 		B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
-		B35797CE1A77E1AF0016FCE1 /* 01 Speak To Me _ Breathe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797C51A77E1AF0016FCE1 /* 01 Speak To Me _ Breathe.mp3 */; };
-		B35797CF1A77E1AF0016FCE1 /* 02 On The Run.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797C61A77E1AF0016FCE1 /* 02 On The Run.mp3 */; };
-		B35797D01A77E1AF0016FCE1 /* time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797C71A77E1AF0016FCE1 /* time.mp3 */; };
-		B35797D11A77E1AF0016FCE1 /* 04 The Great Gig In The Sky.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797C81A77E1AF0016FCE1 /* 04 The Great Gig In The Sky.mp3 */; };
-		B35797D21A77E1AF0016FCE1 /* 05 Money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797C91A77E1AF0016FCE1 /* 05 Money.mp3 */; };
-		B35797D31A77E1AF0016FCE1 /* 06 Us And Them.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CA1A77E1AF0016FCE1 /* 06 Us And Them.mp3 */; };
-		B35797D41A77E1AF0016FCE1 /* 07 Any Colour You Like.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CB1A77E1AF0016FCE1 /* 07 Any Colour You Like.mp3 */; };
-		B35797D51A77E1AF0016FCE1 /* 08 Brain Damage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CC1A77E1AF0016FCE1 /* 08 Brain Damage.mp3 */; };
-		B35797D61A77E1AF0016FCE1 /* 09 Eclipse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CD1A77E1AF0016FCE1 /* 09 Eclipse.mp3 */; };
 		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
 		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
 		B3BB9B6D1A79170C00A6DD56 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB9B6C1A79170C00A6DD56 /* SoundPlayer.swift */; };
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
 		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
+		C52890B61A8A0BAE004B5C9A /* 1-eclipse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C52890B31A8A0BAE004B5C9A /* 1-eclipse.mp3 */; };
+		C52890B71A8A0BAE004B5C9A /* 2-anycolour.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C52890B41A8A0BAE004B5C9A /* 2-anycolour.mp3 */; };
+		C52890B81A8A0BAE004B5C9A /* 3-braindamage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C52890B51A8A0BAE004B5C9A /* 3-braindamage.mp3 */; };
 		C56DA1C91A7E8EE100B8D36D /* GestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */; };
 		C56DA1CB1A7E919500B8D36D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
@@ -84,15 +78,6 @@
 		B30489451A6E624300D9189C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30489461A6E624300D9189C /* MusicControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControllerTests.swift; sourceTree = "<group>"; };
 		B336115C1A6EA58000422D85 /* MusicPlayer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MusicPlayer.xml; path = RDF/MusicPlayer.xml; sourceTree = SOURCE_ROOT; };
-		B35797C51A77E1AF0016FCE1 /* 01 Speak To Me _ Breathe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Speak To Me _ Breathe.mp3"; sourceTree = "<group>"; };
-		B35797C61A77E1AF0016FCE1 /* 02 On The Run.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 On The Run.mp3"; sourceTree = "<group>"; };
-		B35797C71A77E1AF0016FCE1 /* time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = time.mp3; sourceTree = "<group>"; };
-		B35797C81A77E1AF0016FCE1 /* 04 The Great Gig In The Sky.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 The Great Gig In The Sky.mp3"; sourceTree = "<group>"; };
-		B35797C91A77E1AF0016FCE1 /* 05 Money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 Money.mp3"; sourceTree = "<group>"; };
-		B35797CA1A77E1AF0016FCE1 /* 06 Us And Them.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Us And Them.mp3"; sourceTree = "<group>"; };
-		B35797CB1A77E1AF0016FCE1 /* 07 Any Colour You Like.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 Any Colour You Like.mp3"; sourceTree = "<group>"; };
-		B35797CC1A77E1AF0016FCE1 /* 08 Brain Damage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 Brain Damage.mp3"; sourceTree = "<group>"; };
-		B35797CD1A77E1AF0016FCE1 /* 09 Eclipse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 Eclipse.mp3"; sourceTree = "<group>"; };
 		B38BA7CE1A6E70EB00D408EA /* example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.xml; sourceTree = "<group>"; };
 		B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicController-Bridging-Header.h"; sourceTree = "<group>"; };
 		B38BA7D31A6E727600D408EA /* RdfParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdfParser.h; sourceTree = "<group>"; };
@@ -102,6 +87,9 @@
 		B3EAF0A51A6E6830001C6666 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B3EAF0A71A6E6841001C6666 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = usr/lib/libxslt.dylib; sourceTree = SDKROOT; };
 		B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C52890B31A8A0BAE004B5C9A /* 1-eclipse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-eclipse.mp3"; sourceTree = "<group>"; };
+		C52890B41A8A0BAE004B5C9A /* 2-anycolour.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2-anycolour.mp3"; sourceTree = "<group>"; };
+		C52890B51A8A0BAE004B5C9A /* 3-braindamage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3-braindamage.mp3"; sourceTree = "<group>"; };
 		C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizer.h; sourceTree = "<group>"; };
 		C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizer.m; sourceTree = "<group>"; };
 		C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -203,15 +191,9 @@
 		B35797D81A77E1BE0016FCE1 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				B35797C51A77E1AF0016FCE1 /* 01 Speak To Me _ Breathe.mp3 */,
-				B35797C61A77E1AF0016FCE1 /* 02 On The Run.mp3 */,
-				B35797C71A77E1AF0016FCE1 /* time.mp3 */,
-				B35797C81A77E1AF0016FCE1 /* 04 The Great Gig In The Sky.mp3 */,
-				B35797C91A77E1AF0016FCE1 /* 05 Money.mp3 */,
-				B35797CA1A77E1AF0016FCE1 /* 06 Us And Them.mp3 */,
-				B35797CB1A77E1AF0016FCE1 /* 07 Any Colour You Like.mp3 */,
-				B35797CC1A77E1AF0016FCE1 /* 08 Brain Damage.mp3 */,
-				B35797CD1A77E1AF0016FCE1 /* 09 Eclipse.mp3 */,
+				C52890B31A8A0BAE004B5C9A /* 1-eclipse.mp3 */,
+				C52890B41A8A0BAE004B5C9A /* 2-anycolour.mp3 */,
+				C52890B51A8A0BAE004B5C9A /* 3-braindamage.mp3 */,
 			);
 			name = sounds;
 			sourceTree = "<group>";
@@ -345,19 +327,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35797D51A77E1AF0016FCE1 /* 08 Brain Damage.mp3 in Resources */,
-				B35797CF1A77E1AF0016FCE1 /* 02 On The Run.mp3 in Resources */,
-				B35797D31A77E1AF0016FCE1 /* 06 Us And Them.mp3 in Resources */,
+				C52890B61A8A0BAE004B5C9A /* 1-eclipse.mp3 in Resources */,
 				B30489361A6E624300D9189C /* Main.storyboard in Resources */,
+				C52890B81A8A0BAE004B5C9A /* 3-braindamage.mp3 in Resources */,
 				B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */,
-				B35797D21A77E1AF0016FCE1 /* 05 Money.mp3 in Resources */,
-				B35797D41A77E1AF0016FCE1 /* 07 Any Colour You Like.mp3 in Resources */,
-				B35797D11A77E1AF0016FCE1 /* 04 The Great Gig In The Sky.mp3 in Resources */,
-				B35797D01A77E1AF0016FCE1 /* time.mp3 in Resources */,
+				C52890B71A8A0BAE004B5C9A /* 2-anycolour.mp3 in Resources */,
 				B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */,
 				B30489381A6E624300D9189C /* Images.xcassets in Resources */,
-				B35797CE1A77E1AF0016FCE1 /* 01 Speak To Me _ Breathe.mp3 in Resources */,
-				B35797D61A77E1AF0016FCE1 /* 09 Eclipse.mp3 in Resources */,
 				B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
