@@ -21,7 +21,7 @@ class Sound : NSObject {
     func readFileIntoAVPlayer() {
         
         var error: NSError?
-        let fileURL:NSURL = NSBundle.mainBundle().URLForResource("time", withExtension: "mp3")!
+        let fileURL:NSURL = NSBundle.mainBundle().URLForResource("01-eclipse", withExtension: "mp3")!
         
         // the player must be a field. Otherwise it will be released before playing starts.
         self.avPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: &error)
