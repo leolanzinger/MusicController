@@ -15,11 +15,6 @@
 @interface GestureRecognizer : NSObject
 {
     CMMotionManager *motionManager;
-    float previous_x_value;
-    float previous_y_value;
-    float previous_z_value;
-    NSTimeInterval time_begin;
-    NSTimeInterval time_end;
 }
 
 

@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SoundPlayer : NSObject {
+class Sound : NSObject {
     
     /// The player.
     var avPlayer:AVAudioPlayer!
@@ -21,8 +21,9 @@ class SoundPlayer : NSObject {
     func readFileIntoAVPlayer() {
         
         var error: NSError?
-        let fileURL:NSURL = NSBundle.mainBundle().URLForResource("1-eclipse", withExtension: "mp3")!
+        let fileURL:NSURL = NSBundle.mainBundle().URLForResource("01-eclipse", withExtension: "mp3")!
         
+        // the player must be a field. Otherwise it will be released before playing starts.
         self.avPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: &error)
         if avPlayer == nil {
             if let e = error {
@@ -43,19 +44,17 @@ class SoundPlayer : NSObject {
         }
     }
     
-    func toggleAVPlayer() -> Bool {
+    func toggleAVPlayer() {
         if avPlayer.playing {
             avPlayer.pause()
-            return false
         } else {
             avPlayer.play()
-            return true
         }
     }
 }
 
 // MARK: AVAudioPlayerDelegate
-extension SoundPlayer : AVAudioPlayerDelegate {
+extension Sound : AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
         println("finished playing \(flag)")
     }
