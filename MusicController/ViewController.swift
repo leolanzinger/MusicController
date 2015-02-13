@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var songLabel: UILabel!
     
     var mediaPlayer: MPMoviePlayerController = MPMoviePlayerController()
+    var playing = false
     
     var gestureRecognizer: GestureRecognizer = GestureRecognizer()
     
@@ -35,12 +36,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playStopMusic(sender: AnyObject) {
-        var playing:Bool = audioPlayer.toggleAVPlayer()
         if (playing) {
-            playButton.setTitle("Pause", forState: UIControlState.Normal)
+            playing = false
+            playButton.setTitle("Play", forState: UIControlState.Normal)
         }
         else {
-            playButton.setTitle("Play", forState: UIControlState.Normal)
+            playing = true
+            playButton.setTitle("Pause", forState: UIControlState.Normal)
         }
     }
 
