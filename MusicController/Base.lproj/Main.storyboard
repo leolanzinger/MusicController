@@ -16,11 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-71-cuh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqE-dL-eNY">
+                                <rect key="frame" x="139" y="198" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-71-cuh">
                                 <rect key="frame" x="131" y="269" width="58" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="58" id="pG9-B2-7rx"/>
-                                </constraints>
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,20 +31,8 @@
                                     <action selector="playStopMusic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CDg-St-bZ9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqE-dL-eNY">
-                                <rect key="frame" x="139" y="199" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Pba-71-cuh" firstAttribute="top" secondItem="aqE-dL-eNY" secondAttribute="bottom" constant="49" id="Avs-Zd-7kt"/>
-                            <constraint firstItem="aqE-dL-eNY" firstAttribute="centerX" secondItem="Pba-71-cuh" secondAttribute="centerX" id="N1J-ff-MDS"/>
-                            <constraint firstItem="aqE-dL-eNY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Sbv-EK-KU5"/>
-                            <constraint firstItem="Pba-71-cuh" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="bp5-Ty-Zzf"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="playButton" destination="Pba-71-cuh" id="yMH-Wk-RRI"/>
