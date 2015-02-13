@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     var gestureRecognizer: GestureRecognizer = GestureRecognizer()
     
-    let audioPlayer: SoundPlayer = SoundPlayer()
+    let audioPlayer: Sound = Sound()
     
     override func viewDidLoad() {
         super.viewDidLoad()

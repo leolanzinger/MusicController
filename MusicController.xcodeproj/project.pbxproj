@@ -26,7 +26,7 @@
 		B35797D61A77E1AF0016FCE1 /* 09 Eclipse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CD1A77E1AF0016FCE1 /* 09 Eclipse.mp3 */; };
 		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
 		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
-		B3BB9B6D1A79170C00A6DD56 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB9B6C1A79170C00A6DD56 /* SoundPlayer.swift */; };
+		B3BB9B6D1A79170C00A6DD56 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB9B6C1A79170C00A6DD56 /* Sound.swift */; };
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
 		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
@@ -97,7 +97,7 @@
 		B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicController-Bridging-Header.h"; sourceTree = "<group>"; };
 		B38BA7D31A6E727600D408EA /* RdfParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdfParser.h; sourceTree = "<group>"; };
 		B38BA7D41A6E727600D408EA /* RdfParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdfParser.m; sourceTree = "<group>"; };
-		B3BB9B6C1A79170C00A6DD56 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		B3BB9B6C1A79170C00A6DD56 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redland.xcodeproj; path = "Redland-ObjC/Redland.xcodeproj"; sourceTree = "<group>"; };
 		B3EAF0A51A6E6830001C6666 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B3EAF0A71A6E6841001C6666 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = usr/lib/libxslt.dylib; sourceTree = SDKROOT; };
@@ -158,7 +158,7 @@
 			children = (
 				B30489301A6E624300D9189C /* AppDelegate.swift */,
 				B30489321A6E624300D9189C /* ViewController.swift */,
-				B3BB9B6C1A79170C00A6DD56 /* SoundPlayer.swift */,
+				B3BB9B6C1A79170C00A6DD56 /* Sound.swift */,
 				B38BA7D31A6E727600D408EA /* RdfParser.h */,
 				C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */,
 				C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */,
@@ -379,7 +379,7 @@
 				B30489331A6E624300D9189C /* ViewController.swift in Sources */,
 				B30489311A6E624300D9189C /* AppDelegate.swift in Sources */,
 				B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */,
-				B3BB9B6D1A79170C00A6DD56 /* SoundPlayer.swift in Sources */,
+				B3BB9B6D1A79170C00A6DD56 /* Sound.swift in Sources */,
 				C56DA1C91A7E8EE100B8D36D /* GestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
