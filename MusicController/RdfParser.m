@@ -9,6 +9,8 @@
 #import "RdfParser.h"
 
 @implementation RdfParser
+
+// standard parser template
 - (void)parseRDFXML:(NSString *)rdfString {
     if ([rdfString length] > 0) {
         
@@ -47,4 +49,17 @@
         
     }
 }
+
+// parse RDF if input has accelerometer gestures
+- (void)parseAccelerometerGestures:(NSString *)rdfString {
+    if ([rdfString length] > 0) {
+    }
+}
+
+// parse RDF if input has camera recognized gestures
+- (void)parseCameraGestures:(NSString *)rdfString {
+    if ([rdfString length] > 0) {
+    }
+}
+
 @end

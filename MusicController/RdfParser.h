@@ -12,5 +12,7 @@
 @interface RdfParser : NSObject
 
 - (void) parseRDFXML:(NSString *)rdfString;
+- (void) parseAccelerometerGestures:(NSString *)rdfString;
+- (void) parseCameraGestures:(NSString *)rdfString;
 
 @end
