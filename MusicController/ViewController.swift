@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     var playing = false
     
     // initialize classes for sound playing and gestures recognition
-    var gestureRecognizer: GestureRecognizer = GestureRecognizer()
     let audioPlayer: Sound = Sound()
+    var gestureRecognizer: GestureRecognizer = GestureRecognizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,31 @@ class ViewController: UIViewController {
     /**
     IBActions to control music playback
     */
+    // Set "play" or "pause" label depending on the state of the playback
     @IBAction func playStopMusic(sender: AnyObject) {
+        togglePlayback()
+    }
+    
+    @IBAction func nextSong(sender: AnyObject) {
+        nextSongController()
+    }
+    
+    @IBAction func previousSong(sender: AnyObject) {
+        previousSongController()
+    }
+    
+    @IBAction func volumeUp(sender: AnyObject) {
+        volumeUpController()
+    }
+
+    @IBAction func volumeDown(sender: AnyObject) {
+        volumeDownController()
+    }
+    
+    /**
+    Functions to control music playback
+    */
+    func togglePlayback() {
         if (playing) {
             playing = false
             playButton.setTitle("Play", forState: UIControlState.Normal)
@@ -62,23 +86,22 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func nextSong(sender: AnyObject) {
+    func nextSongController() {
         audioPlayer.nextSong()
     }
     
-    @IBAction func previousSong(sender: AnyObject) {
+    func previousSongController() {
         audioPlayer.previousSong()
     }
     
-    @IBAction func volumeUp(sender: AnyObject) {
+    func volumeUpController() {
         audioPlayer.volumeUp()
         volumeLabel.text = "\(audioPlayer.getVolume())"
     }
     
-    @IBAction func volumeDown(sender: AnyObject) {
+    func volumeDownController() {
         audioPlayer.volumeDown()
         volumeLabel.text = "\(audioPlayer.getVolume())"
     }
-
 }
 
