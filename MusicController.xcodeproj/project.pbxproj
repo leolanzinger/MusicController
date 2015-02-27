@@ -19,6 +19,7 @@
 		B35797D61A77E1AF0016FCE1 /* 01-eclipse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CD1A77E1AF0016FCE1 /* 01-eclipse.mp3 */; };
 		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
 		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
+		B39268341AA08B5E00D1BBF2 /* 03-morning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39268331AA08B5E00D1BBF2 /* 03-morning.mp3 */; };
 		B3BB9B6D1A79170C00A6DD56 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB9B6C1A79170C00A6DD56 /* Sound.swift */; };
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
@@ -83,6 +84,7 @@
 		B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicController-Bridging-Header.h"; sourceTree = "<group>"; };
 		B38BA7D31A6E727600D408EA /* RdfParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdfParser.h; sourceTree = "<group>"; };
 		B38BA7D41A6E727600D408EA /* RdfParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdfParser.m; sourceTree = "<group>"; };
+		B39268331AA08B5E00D1BBF2 /* 03-morning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03-morning.mp3"; sourceTree = "<group>"; };
 		B3BB9B6C1A79170C00A6DD56 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redland.xcodeproj; path = "Redland-ObjC/Redland.xcodeproj"; sourceTree = "<group>"; };
 		B3EAF0A51A6E6830001C6666 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -189,6 +191,7 @@
 		B35797D81A77E1BE0016FCE1 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				B39268331AA08B5E00D1BBF2 /* 03-morning.mp3 */,
 				B35797CC1A77E1AF0016FCE1 /* 02-braindamage.mp3 */,
 				B35797CD1A77E1AF0016FCE1 /* 01-eclipse.mp3 */,
 			);
@@ -330,6 +333,7 @@
 				B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */,
 				B30489381A6E624300D9189C /* Images.xcassets in Resources */,
 				B35797D61A77E1AF0016FCE1 /* 01-eclipse.mp3 in Resources */,
+				B39268341AA08B5E00D1BBF2 /* 03-morning.mp3 in Resources */,
 				B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
