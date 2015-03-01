@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqE-dL-eNY">
-                                <rect key="frame" x="16" y="183" width="288" height="21"/>
+                                <rect key="frame" x="16" y="111" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-71-cuh">
-                                <rect key="frame" x="145" y="276" width="39" height="39"/>
+                                <rect key="frame" x="145" y="204" width="39" height="39"/>
                                 <state key="normal" title="play" image="play128.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZu-3b-XGU">
-                                <rect key="frame" x="221" y="276" width="39" height="39"/>
+                                <rect key="frame" x="221" y="204" width="39" height="39"/>
                                 <state key="normal" image="skip3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GA-Hr-mXp">
-                                <rect key="frame" x="60" y="276" width="39" height="39"/>
+                                <rect key="frame" x="60" y="204" width="39" height="39"/>
                                 <state key="normal" image="lasttrack1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="698-Zu-YSb">
-                                <rect key="frame" x="216" y="346" width="39" height="39"/>
+                                <rect key="frame" x="216" y="274" width="39" height="39"/>
                                 <state key="normal" image="sound53.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jy8-TP-nk6">
-                                <rect key="frame" x="73" y="350" width="31" height="31"/>
+                                <rect key="frame" x="73" y="278" width="31" height="31"/>
                                 <state key="normal" image="music249.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -68,7 +68,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qG6-V9-aMG">
-                                <rect key="frame" x="112" y="355" width="96" height="21"/>
+                                <rect key="frame" x="112" y="283" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av1-k5-AwJ">
+                                <rect key="frame" x="211" y="379" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleSpeech:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eGX-mN-moe"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speech feedback" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o30-pJ-ZGe">
+                                <rect key="frame" x="60" y="384" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23C-4i-T5j">
+                                <rect key="frame" x="211" y="418" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleAccelerometer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eWS-G9-VSl"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accelerometer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSE-nV-zG8">
+                                <rect key="frame" x="60" y="423" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,10 +101,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="accelerometerSwitch" destination="23C-4i-T5j" id="Zj8-8Y-TVw"/>
                         <outlet property="nextButton" destination="WZu-3b-XGU" id="q6B-Wa-kCX"/>
                         <outlet property="playButton" destination="Pba-71-cuh" id="yMH-Wk-RRI"/>
                         <outlet property="previousButton" destination="8GA-Hr-mXp" id="yXc-0S-hdT"/>
                         <outlet property="songLabel" destination="aqE-dL-eNY" id="RdS-Ex-wcW"/>
+                        <outlet property="speechSwitch" destination="Av1-k5-AwJ" id="mjN-Tq-mml"/>
                         <outlet property="volumeDownButton" destination="jy8-TP-nk6" id="wQg-Jm-UH7"/>
                         <outlet property="volumeLabel" destination="qG6-V9-aMG" id="F16-kL-LrD"/>
                         <outlet property="volumeUpButton" destination="698-Zu-YSb" id="D9I-pM-Kkt"/>

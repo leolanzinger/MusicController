@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -21,18 +22,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var volumeLabel: UILabel!
     
+    // images
+    let pause_image = UIImage(named: "pause52.png") as UIImage?
+    let play_image = UIImage(named: "play128.png") as UIImage?
+    
+    // switches
+    @IBOutlet weak var speechSwitch: UISwitch!
+    @IBOutlet weak var accelerometerSwitch: UISwitch!
+    
+    // helper variables
     var playing = false
+    var speech = false
+    var accelerometer = false
+    
+    // speech feedback
+    let synth = AVSpeechSynthesizer()
+    var utterance = AVSpeechUtterance(string: "")
     
     // initialize classes for sound playing and gestures recognition
     let audioPlayer: Sound = Sound()
     var gestureRecognizer: GestureRecognizer = GestureRecognizer()
     
-    // images
-    let pause_image = UIImage(named: "pause52.png") as UIImage?
-    let play_image = UIImage(named: "play128.png") as UIImage?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // initialize switches to off status
+        speechSwitch.setOn(false, animated: true)
+        accelerometerSwitch.setOn(false, animated: true)
         
         // start audio player
         audioPlayer.readFileIntoAVPlayer()
@@ -47,6 +63,7 @@ class ViewController: UIViewController {
         // Do not parse rdf for now
         //rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/MusicPlayer.xml")
         
+        // initialize notification center to get acccelerometer feedback
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceive:", name: "ViewControllerNotification", object: nil)
     }
 
@@ -79,6 +96,14 @@ class ViewController: UIViewController {
         volumeDownController()
     }
     
+    @IBAction func toggleSpeech(sender: AnyObject) {
+        toggleSpeechController()
+    }
+    
+    @IBAction func toggleAccelerometer(sender: AnyObject) {
+        toggleAccelerometerController()
+    }
+    
     /**
     Functions to control music playback
     */
@@ -87,11 +112,13 @@ class ViewController: UIViewController {
             playing = false
             playButton.setImage(play_image, forState: .Normal)
             audioPlayer.toggleAVPlayer()
+            speak("Pause music")
         }
         else {
             playing = true
             playButton.setImage(pause_image, forState: .Normal)
             audioPlayer.toggleAVPlayer()
+            speak("Play music")
         }
     }
     
@@ -99,28 +126,70 @@ class ViewController: UIViewController {
         audioPlayer.nextSong()
         // get current track title
         songLabel.text = audioPlayer.getTrack()
+        speak("Next song")
     }
     
     func previousSongController() {
         audioPlayer.previousSong()
         // get current track title
         songLabel.text = audioPlayer.getTrack()
+        speak("Previous song")
     }
     
     func volumeUpController() {
+        if (audioPlayer.getVolume() <= 0.9) {
+            speak("Increased volume")
+        }
+        else {
+            speak("Maximum volume level")
+        }
         audioPlayer.volumeUp()
         volumeLabel.text = "\(audioPlayer.getVolume())"
     }
     
     func volumeDownController() {
+        if (audioPlayer.getVolume() >= 0.1) {
+            speak("Decreased volume")
+        }
+        else {
+            speak("Minimum volume level")
+        }
         audioPlayer.volumeDown()
         volumeLabel.text = "\(audioPlayer.getVolume())"
+    }
+    
+    func toggleSpeechController() {
+        if (speech) {
+            speak("Speech feedback disabled")
+            speech = false
+        }
+        else {
+            speech = true
+            speak("Speech feedback enabled")
+        }
+    }
+    
+    func toggleAccelerometerController() {
+        if (accelerometer) {
+            accelerometer = false
+        }
+        else {
+            accelerometer = true
+        }
+    }
+    
+    func speak(message: String) {
+        if (speech) {
+            utterance = AVSpeechUtterance(string: message)
+            utterance.rate = 0.1
+            synth.speakUtterance(utterance)
+        }
     }
     
     func didReceive(userData:NSDictionary){
         //        let data = userData["userInfo"]
 //        let number = userData["index"]
-        println("received from viewController \(number)")
+//        println("received from viewController \(number)")
     }
 }
 
