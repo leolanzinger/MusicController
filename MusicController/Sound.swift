@@ -14,6 +14,7 @@ class Sound : NSObject {
     var avPlayer:AVAudioPlayer!
     var indexPlayer:Int = 0
     var soundsArray = [NSURL]()
+    var titlesArray = [String]()
     
     /**
     Uses AvAudioPlayer to play a sound file.
@@ -31,6 +32,9 @@ class Sound : NSObject {
         // put them into the array
         soundsArray += [fileURL_1, fileURL_2, fileURL_3]
         
+        // put titles in array
+        titlesArray += ["Eclipse - Pink Floyd", "Brain Damage - Pink Floyd", "Morning - Al Jarreau"]
+        
         // the player must be a field. Otherwise it will be released before playing starts.
         self.avPlayer = AVAudioPlayer(contentsOfURL: soundsArray[indexPlayer], error: &error)
         if avPlayer == nil {
@@ -45,10 +49,23 @@ class Sound : NSObject {
         avPlayer.volume = 0.5
     }
     
+    /**
+    Get current track title
+    */
+    func getTrack() -> String {
+        return titlesArray[indexPlayer]
+    }
+    
+    /**
+    Get current volume level
+    */
     func getVolume() -> Float {
         return avPlayer.volume
     }
     
+    /**
+    Stop audio player
+    */
     func stopAVPLayer() {
         if avPlayer.playing {
             avPlayer.stop()
@@ -71,6 +88,9 @@ class Sound : NSObject {
     */
     func nextSong() {
         
+        // keep same volume level
+        var cur_vol = getVolume()
+        
         //little tweak to continue playing
         var playing:Bool = false
         if avPlayer.playing {
@@ -83,6 +103,7 @@ class Sound : NSObject {
         // increase counter and recount index
         indexPlayer = (indexPlayer + 1) % soundsArray.count
         avPlayer = AVAudioPlayer(contentsOfURL: soundsArray[indexPlayer], error: &error)
+        avPlayer.volume = cur_vol
         avPlayer.delegate = self
         
         // continue playing if sound is playing
@@ -95,6 +116,8 @@ class Sound : NSObject {
     Move back to previous track in array
     */
     func previousSong() {
+        // keep same volume level
+        var cur_vol = getVolume()
         
         //little tweak to continue playing
         var playing:Bool = false
@@ -108,6 +131,7 @@ class Sound : NSObject {
         // decrease counter and recount index
         indexPlayer = ((indexPlayer + soundsArray.count) - 1) % soundsArray.count
         avPlayer = AVAudioPlayer(contentsOfURL: soundsArray[indexPlayer], error: &error)
+        avPlayer.volume = cur_vol
         avPlayer.delegate = self
         
         // continue playing if sound is playing

@@ -27,6 +27,10 @@ class ViewController: UIViewController {
     let audioPlayer: Sound = Sound()
     var gestureRecognizer: GestureRecognizer = GestureRecognizer()
     
+    // images
+    let pause_image = UIImage(named: "pause52.png") as UIImage?
+    let play_image = UIImage(named: "play128.png") as UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,10 +39,15 @@ class ViewController: UIViewController {
         
         // get current volume level
         volumeLabel.text = "\(audioPlayer.getVolume())"
+        
+        // get current track title
+        songLabel.text = audioPlayer.getTrack()
 
         var rdfParser: RdfParser = RdfParser()
         // Do not parse rdf for now
         //rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/MusicPlayer.xml")
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceive:", name: "ViewControllerNotification", object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,22 +85,26 @@ class ViewController: UIViewController {
     func togglePlayback() {
         if (playing) {
             playing = false
-            playButton.setTitle("Play", forState: UIControlState.Normal)
+            playButton.setImage(play_image, forState: .Normal)
             audioPlayer.toggleAVPlayer()
         }
         else {
             playing = true
-            playButton.setTitle("Pause", forState: UIControlState.Normal)
+            playButton.setImage(pause_image, forState: .Normal)
             audioPlayer.toggleAVPlayer()
         }
     }
     
     func nextSongController() {
         audioPlayer.nextSong()
+        // get current track title
+        songLabel.text = audioPlayer.getTrack()
     }
     
     func previousSongController() {
         audioPlayer.previousSong()
+        // get current track title
+        songLabel.text = audioPlayer.getTrack()
     }
     
     func volumeUpController() {
@@ -102,6 +115,12 @@ class ViewController: UIViewController {
     func volumeDownController() {
         audioPlayer.volumeDown()
         volumeLabel.text = "\(audioPlayer.getVolume())"
+    }
+    
+    func didReceive(userData:NSDictionary){
+        //        let data = userData["userInfo"]
+//        let number = userData["index"]
+        println("received from viewController \(number)")
     }
 }
 

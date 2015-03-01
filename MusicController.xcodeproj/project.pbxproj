@@ -14,6 +14,12 @@
 		B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30489391A6E624300D9189C /* LaunchScreen.xib */; };
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
 		B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */ = {isa = PBXBuildFile; fileRef = B336115C1A6EA58000422D85 /* MusicPlayer.xml */; };
+		B34FBCF81AA352F500794BEA /* play128.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCF71AA352F500794BEA /* play128.png */; };
+		B34FBCFB1AA3540500794BEA /* skip3.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFA1AA3540500794BEA /* skip3.png */; };
+		B34FBCFD1AA3540E00794BEA /* pause52.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFC1AA3540E00794BEA /* pause52.png */; };
+		B34FBCFF1AA3541400794BEA /* lasttrack1.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFE1AA3541400794BEA /* lasttrack1.png */; };
+		B34FBD031AA3547800794BEA /* sound53.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD021AA3547800794BEA /* sound53.png */; };
+		B34FBD071AA354D100794BEA /* music249.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD061AA354D100794BEA /* music249.png */; };
 		B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
 		B35797D51A77E1AF0016FCE1 /* 02-braindamage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CC1A77E1AF0016FCE1 /* 02-braindamage.mp3 */; };
 		B35797D61A77E1AF0016FCE1 /* 01-eclipse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CD1A77E1AF0016FCE1 /* 01-eclipse.mp3 */; };
@@ -78,6 +84,12 @@
 		B30489451A6E624300D9189C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30489461A6E624300D9189C /* MusicControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControllerTests.swift; sourceTree = "<group>"; };
 		B336115C1A6EA58000422D85 /* MusicPlayer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MusicPlayer.xml; path = RDF/MusicPlayer.xml; sourceTree = SOURCE_ROOT; };
+		B34FBCF71AA352F500794BEA /* play128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play128.png; sourceTree = "<group>"; };
+		B34FBCFA1AA3540500794BEA /* skip3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip3.png; sourceTree = "<group>"; };
+		B34FBCFC1AA3540E00794BEA /* pause52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause52.png; sourceTree = "<group>"; };
+		B34FBCFE1AA3541400794BEA /* lasttrack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lasttrack1.png; sourceTree = "<group>"; };
+		B34FBD021AA3547800794BEA /* sound53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound53.png; sourceTree = "<group>"; };
+		B34FBD061AA354D100794BEA /* music249.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music249.png; sourceTree = "<group>"; };
 		B35797CC1A77E1AF0016FCE1 /* 02-braindamage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02-braindamage.mp3"; sourceTree = "<group>"; };
 		B35797CD1A77E1AF0016FCE1 /* 01-eclipse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01-eclipse.mp3"; sourceTree = "<group>"; };
 		B38BA7CE1A6E70EB00D408EA /* example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.xml; sourceTree = "<group>"; };
@@ -155,6 +167,7 @@
 				B30489371A6E624300D9189C /* Images.xcassets */,
 				B35797D81A77E1BE0016FCE1 /* sounds */,
 				B30489391A6E624300D9189C /* LaunchScreen.xib */,
+				B34FBCF91AA352F800794BEA /* images */,
 				B304892E1A6E624300D9189C /* Supporting Files */,
 				B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */,
 			);
@@ -186,6 +199,19 @@
 				B30489451A6E624300D9189C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B34FBCF91AA352F800794BEA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B34FBCFA1AA3540500794BEA /* skip3.png */,
+				B34FBCFC1AA3540E00794BEA /* pause52.png */,
+				B34FBD061AA354D100794BEA /* music249.png */,
+				B34FBD021AA3547800794BEA /* sound53.png */,
+				B34FBCFE1AA3541400794BEA /* lasttrack1.png */,
+				B34FBCF71AA352F500794BEA /* play128.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		B35797D81A77E1BE0016FCE1 /* sounds */ = {
@@ -328,10 +354,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35797D51A77E1AF0016FCE1 /* 02-braindamage.mp3 in Resources */,
+				B34FBD031AA3547800794BEA /* sound53.png in Resources */,
 				B30489361A6E624300D9189C /* Main.storyboard in Resources */,
+				B34FBD071AA354D100794BEA /* music249.png in Resources */,
+				B34FBCFB1AA3540500794BEA /* skip3.png in Resources */,
+				B34FBCFF1AA3541400794BEA /* lasttrack1.png in Resources */,
 				B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */,
 				B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */,
 				B30489381A6E624300D9189C /* Images.xcassets in Resources */,
+				B34FBCFD1AA3540E00794BEA /* pause52.png in Resources */,
+				B34FBCF81AA352F500794BEA /* play128.png in Resources */,
 				B35797D61A77E1AF0016FCE1 /* 01-eclipse.mp3 in Resources */,
 				B39268341AA08B5E00D1BBF2 /* 03-morning.mp3 in Resources */,
 				B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */,
