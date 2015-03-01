@@ -39,8 +39,6 @@ class ViewController: UIViewController {
         var rdfParser: RdfParser = RdfParser()
         // Do not parse rdf for now
         //rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/MusicPlayer.xml")
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceive:", name: "ViewControllerNotification", object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,12 +102,6 @@ class ViewController: UIViewController {
     func volumeDownController() {
         audioPlayer.volumeDown()
         volumeLabel.text = "\(audioPlayer.getVolume())"
-    }
-    
-    func didReceive(userData:NSNotification){
-//        let data = userData["userInfo"]
-        let number = userData["index"]
-        print(number)
     }
 }
 

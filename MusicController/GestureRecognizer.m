@@ -48,8 +48,9 @@ bool time_setted;
 //to do that we need the last value of the axes and then check the current value
 //the values go from -1 to 1 when the phone is not moving fast
 //we can try to have a treshold about 1 bethween the actual value and the previous one
-- ()accelerometerRecognizer:(CMAccelerometerData *)accelerometerData {
+- (NSString *)accelerometerRecognizer:(CMAccelerometerData *)accelerometerData {
     //NSLog(@"\n\tx:%2.1f, y:%2.1f, z:%2.1f", accelerometerData.acceleration.x, accelerometerData.acceleration.y, accelerometerData.acceleration.z);
+    NSString *detectedShake = @"";
     
     float threshold_for_holding = 0.25;
     float threshold_for_gesture = 0.30;
@@ -74,12 +75,8 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: NEXT");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:0]
-                                                                 forKey:@"index"];
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewControllerNotification"
-                                                                    object:self
-                                                                  userInfo:dict];
+                detectedShake = @"Next";
+                return detectedShake;
             }
         }else if (fabs(accelerometerData.acceleration.x + 1) < threshold_for_gesture){
             time_end = CFAbsoluteTimeGetCurrent();
@@ -87,12 +84,8 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: PREW");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:1]
-                                                                 forKey:@"index"];
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewControllerNotification"
-                                                                    object:self
-                                                                  userInfo:dict];
+                detectedShake = @"Previous";
+                return detectedShake;
             }
         }
         
@@ -103,12 +96,8 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume DOWN");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:2]
-                                                                 forKey:@"index"];
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewControllerNotification"
-                                                                    object:self
-                                                                  userInfo:dict];
+                detectedShake = @"Down";
+                return detectedShake;
             }
         }else if (fabs(accelerometerData.acceleration.y + 1) < threshold_for_gesture){
             time_end = CFAbsoluteTimeGetCurrent();
@@ -116,15 +105,13 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume UP");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:3]
-                                                                 forKey:@"index"];
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewControllerNotification"
-                                                                    object:self
-                                                                  userInfo:dict];
+                detectedShake = @"Up";
+                return detectedShake;
             }
         }
     }
+    
+    return detectedShake;
 }
 
 @end
