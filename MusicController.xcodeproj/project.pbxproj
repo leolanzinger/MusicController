@@ -12,23 +12,17 @@
 		B30489381A6E624300D9189C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30489371A6E624300D9189C /* Images.xcassets */; };
 		B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30489391A6E624300D9189C /* LaunchScreen.xib */; };
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
-		B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */ = {isa = PBXBuildFile; fileRef = B336115C1A6EA58000422D85 /* MusicPlayer.xml */; };
-		B34FBCFB1AA3540500794BEA /* skip3.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFA1AA3540500794BEA /* skip3.png */; };
-		B34FBCFF1AA3541400794BEA /* lasttrack1.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFE1AA3541400794BEA /* lasttrack1.png */; };
 		B34FBD031AA3547800794BEA /* sound53.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD021AA3547800794BEA /* sound53.png */; };
 		B34FBD071AA354D100794BEA /* music249.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD061AA354D100794BEA /* music249.png */; };
 		B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
 		B35797D51A77E1AF0016FCE1 /* 02-braindamage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CC1A77E1AF0016FCE1 /* 02-braindamage.mp3 */; };
 		B35797D61A77E1AF0016FCE1 /* 01-eclipse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CD1A77E1AF0016FCE1 /* 01-eclipse.mp3 */; };
-		B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */ = {isa = PBXBuildFile; fileRef = B38BA7CE1A6E70EB00D408EA /* example.xml */; };
-		B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA7D41A6E727600D408EA /* RdfParser.m */; };
 		B39268341AA08B5E00D1BBF2 /* 03-morning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39268331AA08B5E00D1BBF2 /* 03-morning.mp3 */; };
 		B3BB9B6D1A79170C00A6DD56 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB9B6C1A79170C00A6DD56 /* Sound.swift */; };
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
 		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
 		B3F3199C1AA485B30022B41E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3199B1AA485B30022B41E /* ViewController.swift */; };
-		B3F319A01AA4B48E0022B41E /* rdfmodel.xml in Resources */ = {isa = PBXBuildFile; fileRef = B3F3199F1AA4B48E0022B41E /* rdfmodel.xml */; };
 		B3F319A21AA4C5C30022B41E /* fastforwardbutton1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A11AA4C5C30022B41E /* fastforwardbutton1.png */; };
 		B3F319A41AA4C5F00022B41E /* back67.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A31AA4C5F00022B41E /* back67.png */; };
 		B3F319A61AA4C6540022B41E /* play126.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A51AA4C6540022B41E /* play126.png */; };
@@ -85,17 +79,11 @@
 		B30489401A6E624300D9189C /* MusicControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30489451A6E624300D9189C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30489461A6E624300D9189C /* MusicControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControllerTests.swift; sourceTree = "<group>"; };
-		B336115C1A6EA58000422D85 /* MusicPlayer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MusicPlayer.xml; path = RDF/MusicPlayer.xml; sourceTree = SOURCE_ROOT; };
-		B34FBCFA1AA3540500794BEA /* skip3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip3.png; sourceTree = "<group>"; };
-		B34FBCFE1AA3541400794BEA /* lasttrack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lasttrack1.png; sourceTree = "<group>"; };
 		B34FBD021AA3547800794BEA /* sound53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound53.png; sourceTree = "<group>"; };
 		B34FBD061AA354D100794BEA /* music249.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music249.png; sourceTree = "<group>"; };
 		B35797CC1A77E1AF0016FCE1 /* 02-braindamage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02-braindamage.mp3"; sourceTree = "<group>"; };
 		B35797CD1A77E1AF0016FCE1 /* 01-eclipse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01-eclipse.mp3"; sourceTree = "<group>"; };
-		B38BA7CE1A6E70EB00D408EA /* example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.xml; sourceTree = "<group>"; };
 		B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicController-Bridging-Header.h"; sourceTree = "<group>"; };
-		B38BA7D31A6E727600D408EA /* RdfParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RdfParser.h; sourceTree = "<group>"; };
-		B38BA7D41A6E727600D408EA /* RdfParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RdfParser.m; sourceTree = "<group>"; };
 		B39268331AA08B5E00D1BBF2 /* 03-morning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03-morning.mp3"; sourceTree = "<group>"; };
 		B3BB9B6C1A79170C00A6DD56 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redland.xcodeproj; path = "Redland-ObjC/Redland.xcodeproj"; sourceTree = "<group>"; };
@@ -103,7 +91,6 @@
 		B3EAF0A71A6E6841001C6666 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = usr/lib/libxslt.dylib; sourceTree = SDKROOT; };
 		B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B3F3199B1AA485B30022B41E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3F3199F1AA4B48E0022B41E /* rdfmodel.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rdfmodel.xml; sourceTree = "<group>"; };
 		B3F319A11AA4C5C30022B41E /* fastforwardbutton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastforwardbutton1.png; sourceTree = "<group>"; };
 		B3F319A31AA4C5F00022B41E /* back67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back67.png; sourceTree = "<group>"; };
 		B3F319A51AA4C6540022B41E /* play126.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play126.png; sourceTree = "<group>"; };
@@ -167,8 +154,6 @@
 				B3F3199B1AA485B30022B41E /* ViewController.swift */,
 				C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */,
 				C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */,
-				B38BA7D31A6E727600D408EA /* RdfParser.h */,
-				B38BA7D41A6E727600D408EA /* RdfParser.m */,
 				B30489341A6E624300D9189C /* Main.storyboard */,
 				B30489371A6E624300D9189C /* Images.xcassets */,
 				B35797D81A77E1BE0016FCE1 /* sounds */,
@@ -183,10 +168,7 @@
 		B304892E1A6E624300D9189C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3F3199F1AA4B48E0022B41E /* rdfmodel.xml */,
 				B304892F1A6E624300D9189C /* Info.plist */,
-				B336115C1A6EA58000422D85 /* MusicPlayer.xml */,
-				B38BA7CE1A6E70EB00D408EA /* example.xml */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,12 +195,10 @@
 			children = (
 				B3F319A11AA4C5C30022B41E /* fastforwardbutton1.png */,
 				B3F319A71AA4C6C90022B41E /* pause.png */,
-				B34FBCFA1AA3540500794BEA /* skip3.png */,
 				B3F319A51AA4C6540022B41E /* play126.png */,
 				B3F319A31AA4C5F00022B41E /* back67.png */,
 				B34FBD061AA354D100794BEA /* music249.png */,
 				B34FBD021AA3547800794BEA /* sound53.png */,
-				B34FBCFE1AA3541400794BEA /* lasttrack1.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -366,11 +346,7 @@
 				B34FBD031AA3547800794BEA /* sound53.png in Resources */,
 				B30489361A6E624300D9189C /* Main.storyboard in Resources */,
 				B34FBD071AA354D100794BEA /* music249.png in Resources */,
-				B34FBCFB1AA3540500794BEA /* skip3.png in Resources */,
-				B34FBCFF1AA3541400794BEA /* lasttrack1.png in Resources */,
 				B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */,
-				B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */,
-				B3F319A01AA4B48E0022B41E /* rdfmodel.xml in Resources */,
 				B3F319A21AA4C5C30022B41E /* fastforwardbutton1.png in Resources */,
 				B30489381A6E624300D9189C /* Images.xcassets in Resources */,
 				B3F319A61AA4C6540022B41E /* play126.png in Resources */,
@@ -378,7 +354,6 @@
 				B3F319A41AA4C5F00022B41E /* back67.png in Resources */,
 				B3F319A81AA4C6C90022B41E /* pause.png in Resources */,
 				B39268341AA08B5E00D1BBF2 /* 03-morning.mp3 in Resources */,
-				B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +373,6 @@
 			files = (
 				B3F3199C1AA485B30022B41E /* ViewController.swift in Sources */,
 				B30489311A6E624300D9189C /* AppDelegate.swift in Sources */,
-				B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */,
 				B3BB9B6D1A79170C00A6DD56 /* Sound.swift in Sources */,
 				C56DA1C91A7E8EE100B8D36D /* GestureRecognizer.m in Sources */,
 			);

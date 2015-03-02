@@ -65,10 +65,6 @@ class ViewController: UIViewController {
         // get current track title
         songLabel.text = audioPlayer.getTrack()
         
-        var rdfParser: RdfParser = RdfParser()
-        // Do not parse rdf for now
-        rdfParser.parseRDFXML("rdfmodel")
-        
         // initialize notification center to get acccelerometer feedback
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceive:", name: "ViewControllerNotification", object: nil)
         

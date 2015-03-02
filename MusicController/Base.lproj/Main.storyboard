@@ -31,17 +31,8 @@
                                     <action selector="playStopMusic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tox-br-kdX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZu-3b-XGU">
-                                <rect key="frame" x="221" y="204" width="39" height="39"/>
-                                <state key="normal" image="fastforwardbutton1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextSong:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rnt-7A-NpQ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GA-Hr-mXp">
-                                <rect key="frame" x="60" y="204" width="39" height="39"/>
+                                <rect key="frame" x="73" y="204" width="39" height="39"/>
                                 <state key="normal" image="back67.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -110,6 +101,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZu-3b-XGU">
+                                <rect key="frame" x="216" y="204" width="39" height="39"/>
+                                <state key="normal" image="fastforwardbutton1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextSong:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rnt-7A-NpQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

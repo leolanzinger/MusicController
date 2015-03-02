@@ -1,7 +1,7 @@
 # MusicController
-Course project for Multimodal Interaction at Université Paris-Sud.
+Course project for Intelligent Multimodal Interaction at Université Paris-Sud.
 
-This is an iOS app to control a music player using accelerometer-based gestures or camera-recognized gestures. 
+This is an iOS app to control a music player using accelerometer-based gestures or a touch interface. 
 The actions that can be performed are:
 - Play/Pause 
 - Previous Song
@@ -14,6 +14,3 @@ The actions that can be performed are:
 - Leonardo
 - Martino
 - Miley
-
-####Dependencies
-- Redland Objective-C Wrapper library **https://github.com/p2/Redland-ObjC**
