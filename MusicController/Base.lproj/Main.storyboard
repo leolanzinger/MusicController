@@ -24,7 +24,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-71-cuh">
                                 <rect key="frame" x="145" y="204" width="39" height="39"/>
-                                <state key="normal" title="play" image="play128.png">
+                                <state key="normal" title="play" image="play126.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -33,7 +33,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZu-3b-XGU">
                                 <rect key="frame" x="221" y="204" width="39" height="39"/>
-                                <state key="normal" image="skip3.png">
+                                <state key="normal" image="fastforwardbutton1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -42,7 +42,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GA-Hr-mXp">
                                 <rect key="frame" x="60" y="204" width="39" height="39"/>
-                                <state key="normal" image="lasttrack1.png">
+                                <state key="normal" image="back67.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -97,6 +97,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPz-OK-yRd">
+                                <rect key="frame" x="211" y="457" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleAccelerometer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gt7-zz-cmg"/>
+                                    <action selector="toggleTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A2C-Vb-BR2"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touch input" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpR-Am-2Wb">
+                                <rect key="frame" x="60" y="462" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -107,6 +120,7 @@
                         <outlet property="previousButton" destination="8GA-Hr-mXp" id="yXc-0S-hdT"/>
                         <outlet property="songLabel" destination="aqE-dL-eNY" id="RdS-Ex-wcW"/>
                         <outlet property="speechSwitch" destination="Av1-k5-AwJ" id="mjN-Tq-mml"/>
+                        <outlet property="touchSwitch" destination="BPz-OK-yRd" id="s7p-6C-nql"/>
                         <outlet property="volumeDownButton" destination="jy8-TP-nk6" id="wQg-Jm-UH7"/>
                         <outlet property="volumeLabel" destination="qG6-V9-aMG" id="F16-kL-LrD"/>
                         <outlet property="volumeUpButton" destination="698-Zu-YSb" id="D9I-pM-Kkt"/>
@@ -118,10 +132,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lasttrack1.png" width="128" height="128"/>
+        <image name="back67.png" width="128" height="128"/>
+        <image name="fastforwardbutton1.png" width="128" height="128"/>
         <image name="music249.png" width="128" height="128"/>
-        <image name="play128.png" width="128" height="128"/>
-        <image name="skip3.png" width="128" height="128"/>
+        <image name="play126.png" width="128" height="128"/>
         <image name="sound53.png" width="128" height="128"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -2,6 +2,14 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <rdf:Description rdf:about="http://www.w3.org/2001/08/rdf-test/">
         <dc:creator>Jan Grant</dc:creator>
+        <dc:publisher>
+            <rdf:Description>
+                <dc:title>World Wide Web Consortium</dc:title>
+                <dc:source rdf:resource="http://www.w3.org/"/>
+            </rdf:Description>
+        </dc:publisher>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2001/08/rdf-test/">
         <dc:creator>Martino Giacchetti</dc:creator>
         <dc:publisher>
             <rdf:Description>

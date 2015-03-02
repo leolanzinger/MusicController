@@ -7,6 +7,7 @@
 //
 
 #import "GestureRecognizer.h"
+#import "MusicController-Swift.h"
 
 @implementation GestureRecognizer
 
@@ -18,6 +19,7 @@
 static const NSTimeInterval updateTime = 0.05;//using large interval (to not stress the CPU)
 bool gesture_started;
 bool time_setted;
+ViewController *originalView;
 
 -(instancetype)init
 {
@@ -40,6 +42,11 @@ bool time_setted;
         time_setted = false;
     }
     return self;
+}
+
+- (void)addViewController:(NSObject *)object
+{
+    originalView = object;
 }
 
 //This method parse the data and return one string accordingly to the movement
@@ -66,35 +73,33 @@ bool time_setted;
             time_begin = CFAbsoluteTimeGetCurrent();
             time_setted = true;
         }
-        
-        //previous and next song
-        if (fabs(accelerometerData.acceleration.x - 1) < threshold_for_gesture) {
+        if (1 - fabsf(accelerometerData.acceleration.x) > threshold_for_gesture && 1 - fabsf(accelerometerData.acceleration.y) > threshold_for_gesture) {
             time_end = CFAbsoluteTimeGetCurrent();
             gesture_started = false;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
-                NSLog(@"Gesture detected: NEXT");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:0]
-                                                                 forKey:@"index"];
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewControllerNotification"
-                                                                    object:self
-                                                                  userInfo:dict];
+                NSLog(@"Gesture detected: PAUSE");
+                [originalView togglePlayback];
             }
-        }else if (fabs(accelerometerData.acceleration.x + 1) < threshold_for_gesture){
-            time_end = CFAbsoluteTimeGetCurrent();
-            gesture_started = false;
-            time_setted = false;
-            if (time_end - time_begin < time_gesture) {
-                NSLog(@"Gesture detected: PREV");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:1]
-                                                                 forKey:@"index"];
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewControllerNotification"
-                                                                    object:self
-                                                                  userInfo:dict];
+        } else
+            //previous and next song
+            if (fabs(accelerometerData.acceleration.x - 1) < threshold_for_gesture) {
+                time_end = CFAbsoluteTimeGetCurrent();
+                gesture_started = false;
+                time_setted = false;
+                if (time_end - time_begin < time_gesture) {
+                    NSLog(@"Gesture detected: NEXT");
+                    [originalView nextSongController];
+                }
+            }else if (fabs(accelerometerData.acceleration.x + 1) < threshold_for_gesture){
+                time_end = CFAbsoluteTimeGetCurrent();
+                gesture_started = false;
+                time_setted = false;
+                if (time_end - time_begin < time_gesture) {
+                    NSLog(@"Gesture detected: PREW");
+                    [originalView previousSongController];
+                }
             }
-        }
         
         //volume up and down
         if (fabs(accelerometerData.acceleration.y - 1) < threshold_for_gesture) {
@@ -103,12 +108,7 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume DOWN");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:2]
-                                                                 forKey:@"index"];
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewControllerNotification"
-                                                                    object:self
-                                                                  userInfo:dict];
+                [originalView volumeDownController];
             }
         }else if (fabs(accelerometerData.acceleration.y + 1) < threshold_for_gesture){
             time_end = CFAbsoluteTimeGetCurrent();
@@ -116,10 +116,7 @@ bool time_setted;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume UP");
-                NSDictionary* dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:3] forKey:@"index"];
-                [[NSNotificationCenter defaultCenter]postNotificationName:@"ViewControllerNotification"
-                                                                   object:self
-                                                                 userInfo:dict];
+                [originalView volumeUpController];
             }
         }
     }

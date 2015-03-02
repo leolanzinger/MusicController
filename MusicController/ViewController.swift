@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
     // buttons
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
@@ -23,17 +23,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var volumeLabel: UILabel!
     
     // images
-    let pause_image = UIImage(named: "pause52.png") as UIImage?
-    let play_image = UIImage(named: "play128.png") as UIImage?
+    let pause_image = UIImage(named: "pause.png") as UIImage?
+    let play_image = UIImage(named: "play126.png") as UIImage?
     
     // switches
     @IBOutlet weak var speechSwitch: UISwitch!
     @IBOutlet weak var accelerometerSwitch: UISwitch!
+    @IBOutlet weak var touchSwitch: UISwitch!
     
     // helper variables
     var playing = false
     var speech = false
     var accelerometer = false
+    var touch = false
+    var buttonsArray = [UIButton]()
     
     // speech feedback
     let synth = AVSpeechSynthesizer()
@@ -46,9 +49,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gestureRecognizer.addViewController(self);
+        
         // initialize switches to off status
         speechSwitch.setOn(false, animated: true)
         accelerometerSwitch.setOn(false, animated: true)
+        touchSwitch.setOn(false, animated: true)
         
         // start audio player
         audioPlayer.readFileIntoAVPlayer()
@@ -58,15 +64,21 @@ class ViewController: UIViewController {
         
         // get current track title
         songLabel.text = audioPlayer.getTrack()
-
+        
         var rdfParser: RdfParser = RdfParser()
         // Do not parse rdf for now
-        //rdfParser.parseRDFXML("/Users/Leo/Documents/XCODE/MusicController/MusicController/MusicPlayer.xml")
+        rdfParser.parseRDFXML("rdfmodel")
         
         // initialize notification center to get acccelerometer feedback
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceive:", name: "ViewControllerNotification", object: nil)
+        
+        // put buttons in an array
+        buttonsArray += [playButton, nextButton, previousButton, volumeUpButton, volumeDownButton]
+        
+    // disable touch interaction
+        disableTouch()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -91,7 +103,7 @@ class ViewController: UIViewController {
     @IBAction func volumeUp(sender: AnyObject) {
         volumeUpController()
     }
-
+    
     @IBAction func volumeDown(sender: AnyObject) {
         volumeDownController()
     }
@@ -102,6 +114,10 @@ class ViewController: UIViewController {
     
     @IBAction func toggleAccelerometer(sender: AnyObject) {
         toggleAccelerometerController()
+    }
+    
+    @IBAction func toggleTouch(sender: AnyObject) {
+        toggleTouchController()
     }
     
     /**
@@ -172,9 +188,36 @@ class ViewController: UIViewController {
     func toggleAccelerometerController() {
         if (accelerometer) {
             accelerometer = false
+            speak("Accelerometer gestures disabled")
         }
         else {
             accelerometer = true
+            speak("Accelerometer gestures enabled")
+        }
+    }
+    
+    func toggleTouchController() {
+        if (touch) {
+            touch = false
+            disableTouch()
+            speak("Touch gestures disabled")
+        }
+        else {
+            touch = true
+            enableTouch()
+            speak("Touch gestures enabled")
+        }
+    }
+    
+    func disableTouch() {
+        for button in buttonsArray {
+            button.userInteractionEnabled = false
+        }
+    }
+    
+    func enableTouch() {
+        for button in buttonsArray {
+            button.userInteractionEnabled = true
         }
     }
     
@@ -184,12 +227,6 @@ class ViewController: UIViewController {
             utterance.rate = 0.1
             synth.speakUtterance(utterance)
         }
-    }
-    
-    func didReceive(userData:NSDictionary){
-        //        let data = userData["userInfo"]
-//        let number = userData["index"]
-//        println("received from viewController \(number)")
     }
 }
 

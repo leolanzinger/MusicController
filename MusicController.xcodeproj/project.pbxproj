@@ -8,15 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B30489311A6E624300D9189C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489301A6E624300D9189C /* AppDelegate.swift */; };
-		B30489331A6E624300D9189C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489321A6E624300D9189C /* ViewController.swift */; };
 		B30489361A6E624300D9189C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30489341A6E624300D9189C /* Main.storyboard */; };
 		B30489381A6E624300D9189C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30489371A6E624300D9189C /* Images.xcassets */; };
 		B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30489391A6E624300D9189C /* LaunchScreen.xib */; };
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
 		B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */ = {isa = PBXBuildFile; fileRef = B336115C1A6EA58000422D85 /* MusicPlayer.xml */; };
-		B34FBCF81AA352F500794BEA /* play128.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCF71AA352F500794BEA /* play128.png */; };
 		B34FBCFB1AA3540500794BEA /* skip3.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFA1AA3540500794BEA /* skip3.png */; };
-		B34FBCFD1AA3540E00794BEA /* pause52.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFC1AA3540E00794BEA /* pause52.png */; };
 		B34FBCFF1AA3541400794BEA /* lasttrack1.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBCFE1AA3541400794BEA /* lasttrack1.png */; };
 		B34FBD031AA3547800794BEA /* sound53.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD021AA3547800794BEA /* sound53.png */; };
 		B34FBD071AA354D100794BEA /* music249.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD061AA354D100794BEA /* music249.png */; };
@@ -30,6 +27,12 @@
 		B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A51A6E6830001C6666 /* libxml2.dylib */; };
 		B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A71A6E6841001C6666 /* libxslt.dylib */; };
 		B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */; };
+		B3F3199C1AA485B30022B41E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3199B1AA485B30022B41E /* ViewController.swift */; };
+		B3F319A01AA4B48E0022B41E /* rdfmodel.xml in Resources */ = {isa = PBXBuildFile; fileRef = B3F3199F1AA4B48E0022B41E /* rdfmodel.xml */; };
+		B3F319A21AA4C5C30022B41E /* fastforwardbutton1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A11AA4C5C30022B41E /* fastforwardbutton1.png */; };
+		B3F319A41AA4C5F00022B41E /* back67.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A31AA4C5F00022B41E /* back67.png */; };
+		B3F319A61AA4C6540022B41E /* play126.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A51AA4C6540022B41E /* play126.png */; };
+		B3F319A81AA4C6C90022B41E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A71AA4C6C90022B41E /* pause.png */; };
 		C56DA1C91A7E8EE100B8D36D /* GestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */; };
 		C56DA1CB1A7E919500B8D36D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
@@ -76,7 +79,6 @@
 		B304892B1A6E624300D9189C /* MusicController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B304892F1A6E624300D9189C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30489301A6E624300D9189C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B30489321A6E624300D9189C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B30489351A6E624300D9189C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B30489371A6E624300D9189C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B304893A1A6E624300D9189C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -84,9 +86,7 @@
 		B30489451A6E624300D9189C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30489461A6E624300D9189C /* MusicControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControllerTests.swift; sourceTree = "<group>"; };
 		B336115C1A6EA58000422D85 /* MusicPlayer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MusicPlayer.xml; path = RDF/MusicPlayer.xml; sourceTree = SOURCE_ROOT; };
-		B34FBCF71AA352F500794BEA /* play128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play128.png; sourceTree = "<group>"; };
 		B34FBCFA1AA3540500794BEA /* skip3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip3.png; sourceTree = "<group>"; };
-		B34FBCFC1AA3540E00794BEA /* pause52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause52.png; sourceTree = "<group>"; };
 		B34FBCFE1AA3541400794BEA /* lasttrack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lasttrack1.png; sourceTree = "<group>"; };
 		B34FBD021AA3547800794BEA /* sound53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound53.png; sourceTree = "<group>"; };
 		B34FBD061AA354D100794BEA /* music249.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music249.png; sourceTree = "<group>"; };
@@ -102,6 +102,12 @@
 		B3EAF0A51A6E6830001C6666 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B3EAF0A71A6E6841001C6666 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = usr/lib/libxslt.dylib; sourceTree = SDKROOT; };
 		B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B3F3199B1AA485B30022B41E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3F3199F1AA4B48E0022B41E /* rdfmodel.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rdfmodel.xml; sourceTree = "<group>"; };
+		B3F319A11AA4C5C30022B41E /* fastforwardbutton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastforwardbutton1.png; sourceTree = "<group>"; };
+		B3F319A31AA4C5F00022B41E /* back67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back67.png; sourceTree = "<group>"; };
+		B3F319A51AA4C6540022B41E /* play126.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play126.png; sourceTree = "<group>"; };
+		B3F319A71AA4C6C90022B41E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizer.h; sourceTree = "<group>"; };
 		C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizer.m; sourceTree = "<group>"; };
 		C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -157,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				B30489301A6E624300D9189C /* AppDelegate.swift */,
-				B30489321A6E624300D9189C /* ViewController.swift */,
 				B3BB9B6C1A79170C00A6DD56 /* Sound.swift */,
+				B3F3199B1AA485B30022B41E /* ViewController.swift */,
 				C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */,
 				C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */,
 				B38BA7D31A6E727600D408EA /* RdfParser.h */,
@@ -177,6 +183,7 @@
 		B304892E1A6E624300D9189C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3F3199F1AA4B48E0022B41E /* rdfmodel.xml */,
 				B304892F1A6E624300D9189C /* Info.plist */,
 				B336115C1A6EA58000422D85 /* MusicPlayer.xml */,
 				B38BA7CE1A6E70EB00D408EA /* example.xml */,
@@ -204,12 +211,14 @@
 		B34FBCF91AA352F800794BEA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B3F319A11AA4C5C30022B41E /* fastforwardbutton1.png */,
+				B3F319A71AA4C6C90022B41E /* pause.png */,
 				B34FBCFA1AA3540500794BEA /* skip3.png */,
-				B34FBCFC1AA3540E00794BEA /* pause52.png */,
+				B3F319A51AA4C6540022B41E /* play126.png */,
+				B3F319A31AA4C5F00022B41E /* back67.png */,
 				B34FBD061AA354D100794BEA /* music249.png */,
 				B34FBD021AA3547800794BEA /* sound53.png */,
 				B34FBCFE1AA3541400794BEA /* lasttrack1.png */,
-				B34FBCF71AA352F500794BEA /* play128.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -361,10 +370,13 @@
 				B34FBCFF1AA3541400794BEA /* lasttrack1.png in Resources */,
 				B304893B1A6E624300D9189C /* LaunchScreen.xib in Resources */,
 				B38BA7CF1A6E70EB00D408EA /* example.xml in Resources */,
+				B3F319A01AA4B48E0022B41E /* rdfmodel.xml in Resources */,
+				B3F319A21AA4C5C30022B41E /* fastforwardbutton1.png in Resources */,
 				B30489381A6E624300D9189C /* Images.xcassets in Resources */,
-				B34FBCFD1AA3540E00794BEA /* pause52.png in Resources */,
-				B34FBCF81AA352F500794BEA /* play128.png in Resources */,
+				B3F319A61AA4C6540022B41E /* play126.png in Resources */,
 				B35797D61A77E1AF0016FCE1 /* 01-eclipse.mp3 in Resources */,
+				B3F319A41AA4C5F00022B41E /* back67.png in Resources */,
+				B3F319A81AA4C6C90022B41E /* pause.png in Resources */,
 				B39268341AA08B5E00D1BBF2 /* 03-morning.mp3 in Resources */,
 				B336115D1A6EA58000422D85 /* MusicPlayer.xml in Resources */,
 			);
@@ -384,7 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30489331A6E624300D9189C /* ViewController.swift in Sources */,
+				B3F3199C1AA485B30022B41E /* ViewController.swift in Sources */,
 				B30489311A6E624300D9189C /* AppDelegate.swift in Sources */,
 				B38BA7D51A6E727600D408EA /* RdfParser.m in Sources */,
 				B3BB9B6D1A79170C00A6DD56 /* Sound.swift in Sources */,
@@ -449,6 +461,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -464,9 +477,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MusicController;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = MusicController;
+				PRODUCT_NAME = MusicController;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -491,6 +507,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -500,8 +517,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MusicController;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = MusicController;
+				PRODUCT_NAME = MusicController;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -513,6 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -520,6 +541,7 @@
 				INFOPLIST_FILE = MusicController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = MusicController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MusicController/MusicController-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -533,6 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -540,6 +563,7 @@
 				INFOPLIST_FILE = MusicController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = MusicController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MusicController/MusicController-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";

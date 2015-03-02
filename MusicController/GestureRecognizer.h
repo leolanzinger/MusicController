@@ -22,5 +22,8 @@
     NSTimeInterval time_end;
 }
 
+-(instancetype)init:(NSObject *)object;
+
+- (void)addViewController:(NSObject *)object;
 
 @end
