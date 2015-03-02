@@ -14,7 +14,6 @@
 		B30489471A6E624300D9189C /* MusicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30489461A6E624300D9189C /* MusicControllerTests.swift */; };
 		B34FBD031AA3547800794BEA /* sound53.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD021AA3547800794BEA /* sound53.png */; };
 		B34FBD071AA354D100794BEA /* music249.png in Resources */ = {isa = PBXBuildFile; fileRef = B34FBD061AA354D100794BEA /* music249.png */; };
-		B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */; };
 		B35797D51A77E1AF0016FCE1 /* 02-braindamage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CC1A77E1AF0016FCE1 /* 02-braindamage.mp3 */; };
 		B35797D61A77E1AF0016FCE1 /* 01-eclipse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B35797CD1A77E1AF0016FCE1 /* 01-eclipse.mp3 */; };
 		B39268341AA08B5E00D1BBF2 /* 03-morning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B39268331AA08B5E00D1BBF2 /* 03-morning.mp3 */; };
@@ -39,34 +38,6 @@
 			remoteGlobalIDString = B304892A1A6E624300D9189C;
 			remoteInfo = MusicController;
 		};
-		B3EAF09C1A6E67D2001C6666 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = Redland;
-		};
-		B3EAF09E1A6E67D2001C6666 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED48EB5008BB557A00ACF14F;
-			remoteInfo = Tests;
-		};
-		B3EAF0A01A6E67D2001C6666 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEE7B44E15C84978004D5A68;
-			remoteInfo = "redland-ios";
-		};
-		B3EAF0A21A6E67D2001C6666 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEE7B45E15C84978004D5A68;
-			remoteInfo = "Tests-iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -86,7 +57,6 @@
 		B38BA7D21A6E727500D408EA /* MusicController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicController-Bridging-Header.h"; sourceTree = "<group>"; };
 		B39268331AA08B5E00D1BBF2 /* 03-morning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03-morning.mp3"; sourceTree = "<group>"; };
 		B3BB9B6C1A79170C00A6DD56 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
-		B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Redland.xcodeproj; path = "Redland-ObjC/Redland.xcodeproj"; sourceTree = "<group>"; };
 		B3EAF0A51A6E6830001C6666 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B3EAF0A71A6E6841001C6666 /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = usr/lib/libxslt.dylib; sourceTree = SDKROOT; };
 		B3EAF0A91A6E684A001C6666 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -106,7 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56DA1CB1A7E919500B8D36D /* CoreMotion.framework in Frameworks */,
-				B35797C41A77AC180016FCE1 /* libredland-ios.a in Frameworks */,
 				B3EAF0AA1A6E684A001C6666 /* libsqlite3.dylib in Frameworks */,
 				B3EAF0A81A6E6841001C6666 /* libxslt.dylib in Frameworks */,
 				B3EAF0A61A6E6830001C6666 /* libxml2.dylib in Frameworks */,
@@ -133,7 +102,6 @@
 				B304892D1A6E624300D9189C /* MusicController */,
 				B30489431A6E624300D9189C /* MusicControllerTests */,
 				B304892C1A6E624300D9189C /* Products */,
-				B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,17 +181,6 @@
 			name = sounds;
 			sourceTree = "<group>";
 		};
-		B3EAF0921A6E67D2001C6666 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3EAF09D1A6E67D2001C6666 /* Redland.framework */,
-				B3EAF09F1A6E67D2001C6666 /* Tests.octest */,
-				B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */,
-				B3EAF0A31A6E67D2001C6666 /* Tests-iOS.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,12 +249,6 @@
 			mainGroup = B30489221A6E624300D9189C;
 			productRefGroup = B304892C1A6E624300D9189C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B3EAF0921A6E67D2001C6666 /* Products */;
-					ProjectRef = B3EAF0911A6E67D2001C6666 /* Redland.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B304892A1A6E624300D9189C /* MusicController */,
@@ -305,37 +256,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		B3EAF09D1A6E67D2001C6666 /* Redland.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Redland.framework;
-			remoteRef = B3EAF09C1A6E67D2001C6666 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3EAF09F1A6E67D2001C6666 /* Tests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Tests.octest;
-			remoteRef = B3EAF09E1A6E67D2001C6666 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3EAF0A11A6E67D2001C6666 /* libredland-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libredland-ios.a";
-			remoteRef = B3EAF0A01A6E67D2001C6666 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3EAF0A31A6E67D2001C6666 /* Tests-iOS.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Tests-iOS.octest";
-			remoteRef = B3EAF0A21A6E67D2001C6666 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B30489291A6E624300D9189C /* Resources */ = {
