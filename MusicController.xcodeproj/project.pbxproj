@@ -26,6 +26,7 @@
 		B3F319A41AA4C5F00022B41E /* back67.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A31AA4C5F00022B41E /* back67.png */; };
 		B3F319A61AA4C6540022B41E /* play126.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A51AA4C6540022B41E /* play126.png */; };
 		B3F319A81AA4C6C90022B41E /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319A71AA4C6C90022B41E /* pause.png */; };
+		B3F319AC1AA5ADE50022B41E /* Icon Shape.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F319AB1AA5ADE50022B41E /* Icon Shape.png */; };
 		C56DA1C91A7E8EE100B8D36D /* GestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */; };
 		C56DA1CB1A7E919500B8D36D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		B3F319A31AA4C5F00022B41E /* back67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back67.png; sourceTree = "<group>"; };
 		B3F319A51AA4C6540022B41E /* play126.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play126.png; sourceTree = "<group>"; };
 		B3F319A71AA4C6C90022B41E /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		B3F319AB1AA5ADE50022B41E /* Icon Shape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon Shape.png"; sourceTree = "<group>"; };
 		C56DA1C71A7E8EE100B8D36D /* GestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizer.h; sourceTree = "<group>"; };
 		C56DA1C81A7E8EE100B8D36D /* GestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizer.m; sourceTree = "<group>"; };
 		C56DA1CA1A7E919500B8D36D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -161,6 +163,7 @@
 		B34FBCF91AA352F800794BEA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B3F319AB1AA5ADE50022B41E /* Icon Shape.png */,
 				B3F319A11AA4C5C30022B41E /* fastforwardbutton1.png */,
 				B3F319A71AA4C6C90022B41E /* pause.png */,
 				B3F319A51AA4C6540022B41E /* play126.png */,
@@ -262,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F319AC1AA5ADE50022B41E /* Icon Shape.png in Resources */,
 				B35797D51A77E1AF0016FCE1 /* 02-braindamage.mp3 in Resources */,
 				B34FBD031AA3547800794BEA /* sound53.png in Resources */,
 				B30489361A6E624300D9189C /* Main.storyboard in Resources */,

@@ -79,7 +79,8 @@ ViewController *originalView;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: PAUSE");
-                [originalView togglePlayback];
+                if(originalView.accelerometer)
+                    [originalView togglePlayback];
             }
         } else
             //previous and next song
@@ -89,7 +90,8 @@ ViewController *originalView;
                 time_setted = false;
                 if (time_end - time_begin < time_gesture) {
                     NSLog(@"Gesture detected: NEXT");
-                    [originalView nextSongController];
+                    if(originalView.accelerometer)
+                        [originalView nextSongController];
                 }
             }else if (fabs(accelerometerData.acceleration.x + 1) < threshold_for_gesture){
                 time_end = CFAbsoluteTimeGetCurrent();
@@ -97,7 +99,8 @@ ViewController *originalView;
                 time_setted = false;
                 if (time_end - time_begin < time_gesture) {
                     NSLog(@"Gesture detected: PREW");
-                    [originalView previousSongController];
+                    if(originalView.accelerometer)
+                        [originalView previousSongController];
                 }
             }
         
@@ -108,7 +111,8 @@ ViewController *originalView;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume DOWN");
-                [originalView volumeDownController];
+                if(originalView.accelerometer)
+                    [originalView volumeDownController];
             }
         }else if (fabs(accelerometerData.acceleration.y + 1) < threshold_for_gesture){
             time_end = CFAbsoluteTimeGetCurrent();
@@ -116,7 +120,8 @@ ViewController *originalView;
             time_setted = false;
             if (time_end - time_begin < time_gesture) {
                 NSLog(@"Gesture detected: Volume UP");
-                [originalView volumeUpController];
+                if(originalView.accelerometer)
+                    [originalView volumeUpController];
             }
         }
     }
