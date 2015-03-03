@@ -60,7 +60,7 @@ ViewController *originalView;
     
     float threshold_for_holding = 0.25;
     float threshold_for_gesture = 0.30;
-    float time_gesture = 0.8;
+    float time_gesture = 1.3;
     //for this gestures the accelerometer should be x:0 y:0 z:-1
     if (!gesture_started) {
         if ((fabsf(accelerometerData.acceleration.x) < threshold_for_holding) && (fabsf(accelerometerData.acceleration.y) < threshold_for_holding)) {
@@ -73,7 +73,7 @@ ViewController *originalView;
             time_begin = CFAbsoluteTimeGetCurrent();
             time_setted = true;
         }
-        if (1 - fabsf(accelerometerData.acceleration.x) > threshold_for_gesture && 1 - fabsf(accelerometerData.acceleration.y) > threshold_for_gesture) {
+        if (fabsf(accelerometerData.acceleration.x) > threshold_for_gesture && fabsf(accelerometerData.acceleration.y) > threshold_for_gesture) {
             time_end = CFAbsoluteTimeGetCurrent();
             gesture_started = false;
             time_setted = false;
